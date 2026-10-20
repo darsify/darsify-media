@@ -1,0 +1,218 @@
+{
+ "title": "Your center. Now online too.",
+ "family": "orange",
+ "bpm": 118,
+ "key": 4,
+ "mood": "warm",
+ "seed": 77,
+ "cover": 1.5,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.8,
+   "kicker": "Run a center?",
+   "head": [
+    "Your center.",
+    "*Now online too.*"
+   ],
+   "size": 140,
+   "y": 420,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 390,
+     "y": 1180,
+     "w": 320,
+     "t": 0.4
+    }
+   ]
+  },
+  {
+   "type": "tiles",
+   "d": 5.4,
+   "head": [
+    "Darsify for",
+    "*Academies*"
+   ],
+   "size": 120,
+   "y": 280,
+   "ty": 600,
+   "gap": 280,
+   "tiles": [
+    {
+     "title": "All your tutors",
+     "desc": "Every tutor gets their own Darsify workspace.",
+     "icon": "users",
+     "c": "#0b1e30"
+    },
+    {
+     "title": "All your students",
+     "desc": "Groups, attendance and results in one account.",
+     "icon": "school",
+     "c": "#2655a3"
+    },
+    {
+     "title": "Online + on-ground",
+     "desc": "Your own online academy, under your name.",
+     "icon": "globe",
+     "c": "#0b1e30"
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "d": 5.0,
+   "head": [
+    "One view of",
+    "*everything.*"
+   ],
+   "size": 100,
+   "y": 280,
+   "py": 560,
+   "panel": {
+    "crumb": "Nile Academy  /  Overview",
+    "title": "This week",
+    "sub": "3 branches · online and on-ground",
+    "blocks": [
+     {
+      "big": {
+       "t0": 0.4,
+       "t1": 1.6,
+       "from": 0,
+       "to": 1240,
+       "l": "students across all tutors"
+      }
+     },
+     {
+      "row": {
+       "l": "Tutors",
+       "m": "18 active",
+       "chip": "paid",
+       "ctext": "All synced"
+      }
+     },
+     {
+      "bar": {
+       "l": "Attendance",
+       "w": 92,
+       "v": "92%",
+       "at": 1.4
+      }
+     },
+     {
+      "bar": {
+       "l": "Fees collected",
+       "w": 87,
+       "v": "87%",
+       "at": 1.7,
+       "c": "#f26229"
+      }
+     }
+    ]
+   },
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "focus"
+      ],
+      [
+       2.4,
+       "proud"
+      ]
+     ],
+     "x": 720,
+     "y": 1440,
+     "w": 250,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.6,
+   "head": [
+    "One academy.",
+    "*One system.*"
+   ],
+   "size": 150,
+   "y": 480,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Tutors",
+    "Students",
+    "Branches",
+    "Online",
+    "On-ground",
+    "Fees"
+   ],
+   "btn": "BOOK A DEMO",
+   "join": "Book a demo at <b>Darsify.net</b>"
+  }
+ ],
+ "caption": {
+  "ig": "Run a center or an academy? Here's Darsify for Academies.\n\nEvery tutor gets their own Darsify workspace. You see all your students, groups, attendance, results and fees in one account.\n\nAnd your center gets its own online academy, alongside the classes on the ground.\n\nOne academy. One system. Book a demo at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #education #Egypt",
+  "fb": "عندك سنتر أو أكاديمية؟\nمع Darsify for Academies كل مدرس عنده مساحة شغل خاصة بيه، وإنت شايف كل الطلبة والمجموعات والحضور والنتايج والمصاريف في حساب واحد.\nوالسنتر بتاعك يبقى أكاديمية أونلاين جنب الأونجراوند.\n\nاحجز ديمو على darsify.net\n\n—\n\nDarsify for Academies: every tutor, every student, online and on-ground, in one system.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "Your center. Now online too. Darsify for Academies. #WeplanYouteach #edtech #education #Egypt #tutor"
+ },
+ "id": "RL-07"
+}

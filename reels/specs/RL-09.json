@@ -1,0 +1,162 @@
+{
+ "title": "Guess the weak topic",
+ "family": "orange",
+ "bpm": 116,
+ "key": 9,
+ "mood": "drive",
+ "seed": 99,
+ "cover": 1.5,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.6,
+   "kicker": "Quiz time",
+   "head": [
+    "Guess the",
+    "*weak topic.*"
+   ],
+   "size": 160,
+   "y": 420,
+   "sub": "Comment your guess before the end.",
+   "subt": 1.0,
+   "suby": 760,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "thinking"
+      ]
+     ],
+     "x": 400,
+     "y": 1180,
+     "w": 300,
+     "t": 0.4
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "d": 5.8,
+   "head": [
+    "Omar's last",
+    "4 mocks"
+   ],
+   "size": 100,
+   "y": 280,
+   "py": 560,
+   "panel": {
+    "crumb": "Insights  /  Weak points",
+    "title": "Omar K.",
+    "sub": "Correct answers per topic, last 4 mocks",
+    "blocks": [
+     {
+      "bar": {
+       "l": "Data analysis",
+       "w": 88,
+       "v": "88%",
+       "at": 0.5
+      }
+     },
+     {
+      "bar": {
+       "l": "Geometry",
+       "w": 72,
+       "v": "72%",
+       "at": 0.9
+      }
+     },
+     {
+      "bar": {
+       "l": "Ratios",
+       "w": 63,
+       "v": "63%",
+       "at": 1.3
+      }
+     },
+     {
+      "bar": {
+       "l": "Linear equations",
+       "w": 41,
+       "v": "41%",
+       "at": 1.7,
+       "c": "#f26229"
+      }
+     }
+    ],
+    "stamp": {
+     "text": "Weak topic",
+     "t": 3.2,
+     "x": 380,
+     "y": 520
+    }
+   },
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "focus"
+      ],
+      [
+       3.2,
+       "surprised"
+      ]
+     ],
+     "x": 740,
+     "y": 1440,
+     "w": 230,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.8,
+   "head": [
+    "Darsify finds it",
+    "*after every mock.*"
+   ],
+   "size": 120,
+   "y": 440,
+   "sub": "Then sends practice on exactly that topic.",
+   "subt": 0.9,
+   "suby": 760,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 400,
+     "y": 1160,
+     "w": 300,
+     "t": 0.2
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Ratios",
+    "Geometry",
+    "Algebra",
+    "Data",
+    "Practice",
+    "Mocks"
+   ]
+  }
+ ],
+ "caption": {
+  "ig": "Quiz: which topic is costing Omar the most marks?\n\nComment your guess.\n\nDarsify tags every question by topic, so after each mock you see exactly where the marks went, and practice on that topic goes out automatically.\n\nNo more guessing who needs help with what.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #tutors #teachers",
+  "fb": "خمّن: أنهي موضوع بيضيّع على عمر أكتر درجات؟ اكتب إجابتك في الكومنتات.\nDarsify بيصنّف كل سؤال حسب الموضوع، فبعد كل امتحان تجريبي تعرف الدرجات راحت فين، والتدريب على الموضوع ده بيوصل للطالب لوحده.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nGuess the weak topic. Darsify finds it after every mock.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "Guess the weak topic before the end. Comment your answer. #WeplanYouteach #SAT #teachersoftiktok #studytok #tutor"
+ },
+ "id": "RL-09"
+}

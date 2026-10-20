@@ -1,0 +1,163 @@
+{
+ "title": "3 automations every tutor needs",
+ "family": "orange",
+ "bpm": 124,
+ "key": 7,
+ "mood": "bright",
+ "seed": 44,
+ "cover": 1.5,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.6,
+   "kicker": "Save this",
+   "head": [
+    "3 automations",
+    "every tutor",
+    "*needs.*"
+   ],
+   "size": 140,
+   "y": 400,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 390,
+     "y": 1180,
+     "w": 320,
+     "t": 0.4
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "d": 6.0,
+   "head": [
+    "Set them once."
+   ],
+   "size": 110,
+   "y": 280,
+   "ly": 470,
+   "gap": 260,
+   "istep": 1.3,
+   "items": [
+    {
+     "title": "Link after payment",
+     "desc": "Paid students get the class link on their own.",
+     "icon": "link"
+    },
+    {
+     "title": "Reminders before class",
+     "desc": "Goodbye, 'is class today?'",
+     "icon": "bell"
+    },
+    {
+     "title": "Weekly parent reports",
+     "desc": "Every parent gets their child's week on WhatsApp.",
+     "icon": "chat"
+    }
+   ],
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "focus"
+      ],
+      [
+       4.0,
+       "proud"
+      ]
+     ],
+     "x": 720,
+     "y": 1400,
+     "w": 250,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.6,
+   "head": [
+    "They run",
+    "*every week.*",
+    "You teach."
+   ],
+   "size": 150,
+   "y": 430,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Links",
+    "Reminders",
+    "Reports",
+    "Payments",
+    "Attendance",
+    "Mocks"
+   ]
+  }
+ ],
+ "caption": {
+  "ig": "3 automations every tutor needs (save this):\n\n1. The class link goes out automatically once a student pays.\n2. Reminders go out before every class.\n3. Every parent gets a weekly report on WhatsApp.\n\nSet them once in Darsify. They run every week.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #tutors #teachers #productivity",
+  "fb": "٣ حاجات أي مدرس محتاجها تشتغل لوحدها:\n١. اللينك يوصل للطالب أول ما يدفع\n٢. تذكير قبل كل حصة\n٣. تقرير أسبوعي لكل ولي أمر على واتساب\nتظبطها مرة واحدة على Darsify وهي تشتغل كل أسبوع.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\n3 automations every tutor needs: link after payment, reminders before class, weekly parent reports.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "3 automations every tutor needs. Save this. #WeplanYouteach #TeachMoreChaseLess #teachersoftiktok #tutor #productivity"
+ },
+ "id": "RL-04"
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-26 8 278 294" width="278" height="294" role="img" aria-label="dara — sleeping">
+<title>dara — sleeping</title>
+<ellipse cx="104" cy="282" rx="66" ry="8" fill="#0b1e30" opacity="0.12"/>
+<g id="legs">
+<path d="M82 200v54" stroke="#e0567f" stroke-width="18" stroke-linecap="round" fill="none"/>
+<path d="M126 200v54" stroke="#e0567f" stroke-width="18" stroke-linecap="round" fill="none"/>
+<ellipse cx="78" cy="264" rx="22" ry="10" fill="#f26229"/>
+<ellipse cx="130" cy="264" rx="22" ry="10" fill="#f26229"/>
+</g>
+<g id="arms">
+<path d="M36 162q-24 14-26 44" stroke="#e0567f" stroke-width="16" stroke-linecap="round" fill="none"/>
+<path d="M172 168q26 12 30 40" stroke="#e0567f" stroke-width="16" stroke-linecap="round" fill="none"/>
+<circle cx="10" cy="212" r="14" fill="#e0567f"/>
+<circle cx="204" cy="212" r="14" fill="#e0567f"/>
+<circle cx="10" cy="212" r="5.5" fill="#f26229" opacity="0.5"/>
+<circle cx="204" cy="212" r="5.5" fill="#f26229" opacity="0.5"/>
+</g>
+<g id="letterform">
+<path d="M168 212V64c0-26-34-30-48-14" stroke="#e0567f" stroke-width="36" stroke-linecap="round" fill="none"/>
+<circle cx="120" cy="50" r="19" fill="#f26229"/>
+<rect x="20" y="66" width="152" height="146" rx="72" fill="#e0567f"/>
+</g>
+<g id="face">
+<ellipse cx="104" cy="142" rx="66" ry="56" fill="#ffd6e2" opacity="0.3"/>
+<path d="M65 136q15 12 30 0" fill="none" stroke="#0b1e30" stroke-width="6" stroke-linecap="round"/>
+<path d="M117 136q15 12 30 0" fill="none" stroke="#0b1e30" stroke-width="6" stroke-linecap="round"/>
+<path d="M93 179q11 10 22 0" fill="none" stroke="#0b1e30" stroke-width="6.5" stroke-linecap="round"/>
+</g>
+</svg>

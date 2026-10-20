@@ -1,0 +1,252 @@
+{
+ "title": "POV: a parent messages you at 11:47 PM",
+ "family": "orange",
+ "bpm": 112,
+ "key": 2,
+ "mood": "warm",
+ "seed": 22,
+ "cover": 2.0,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.8,
+   "kicker": "POV:",
+   "head": [
+    "It's 11:47 PM.",
+    "A parent",
+    "*messages you.*"
+   ],
+   "size": 140,
+   "y": 380,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "sleeping"
+      ],
+      [
+       1.6,
+       "surprised"
+      ]
+     ],
+     "x": 390,
+     "y": 1180,
+     "w": 320,
+     "t": 0.4,
+     "jump": [
+      1.6
+     ]
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "d": 5.0,
+   "name": "Mrs. Hala (Omar's mom)",
+   "av": "H",
+   "status": "online",
+   "unread": true,
+   "py": 330,
+   "ph": 900,
+   "msgs": [
+    {
+     "text": "Sorry for the late message",
+     "t": 0.4,
+     "time": "11:47 PM"
+    },
+    {
+     "text": "How is Omar doing this month?",
+     "t": 1.2,
+     "time": "11:47 PM"
+    },
+    {
+     "text": "Did he attend Sunday's class?",
+     "t": 2.0,
+     "time": "11:48 PM"
+    },
+    {
+     "text": "And what did he get on the mock?",
+     "t": 2.8,
+     "time": "11:48 PM"
+    }
+   ],
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "concerned"
+      ],
+      [
+       2.6,
+       "annoyed"
+      ]
+     ],
+     "x": 720,
+     "y": 1330,
+     "w": 250,
+     "t": 0.2
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.4,
+   "head": [
+    "Now imagine",
+    "she *already*",
+    "*knows.*"
+   ],
+   "size": 150,
+   "y": 480,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "thinking"
+      ],
+      [
+       1.2,
+       "happy"
+      ]
+     ],
+     "x": 390,
+     "y": 1150,
+     "w": 320,
+     "t": 0.2
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "d": 5.2,
+   "head": [
+    "Every Sunday.",
+    "*Automatically.*"
+   ],
+   "size": 96,
+   "y": 280,
+   "py": 560,
+   "panel": {
+    "crumb": "Group A  /  Parent reports",
+    "title": "Weekly report",
+    "sub": "Omar K. · week of 18 Oct",
+    "blocks": [
+     {
+      "bar": {
+       "l": "Attendance",
+       "w": 100,
+       "v": "4 / 4",
+       "at": 0.5,
+       "c": "#5e8bc8"
+      }
+     },
+     {
+      "bar": {
+       "l": "Mock 3",
+       "w": 82,
+       "v": "82%",
+       "at": 0.8,
+       "c": "#f26229"
+      }
+     },
+     {
+      "bar": {
+       "l": "Homework",
+       "w": 83,
+       "v": "5 / 6",
+       "at": 1.1,
+       "c": "#5e8bc8"
+      }
+     },
+     {
+      "note": "Weak topic: <b style=\"color:#fff\">Ratios</b> · practice sent"
+     },
+     {
+      "btn": {
+       "label": "Send to parent",
+       "at": 2.6,
+       "toast": "Sent on WhatsApp"
+      }
+     }
+    ]
+   },
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "focus"
+      ],
+      [
+       2.9,
+       "proud"
+      ]
+     ],
+     "x": 720,
+     "y": 1420,
+     "w": 250,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "d": 2.6,
+   "name": "Mrs. Hala (Omar's mom)",
+   "av": "H",
+   "status": "online",
+   "py": 560,
+   "ph": 520,
+   "msgs": [
+    {
+     "text": "Got the report, thank you! We will practice Ratios at home.",
+     "t": 0.3,
+     "time": "Sun 6:02 PM"
+    }
+   ],
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "celebrate"
+      ]
+     ],
+     "x": 390,
+     "y": 1180,
+     "w": 300,
+     "t": 0.2,
+     "jump": [
+      0.9
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Attendance",
+    "Mocks",
+    "Homework",
+    "Weak topics",
+    "Reports",
+    "WhatsApp"
+   ]
+  }
+ ],
+ "caption": {
+  "ig": "POV: it's 11:47 PM and a parent wants a full update.\n\nAttendance. Mock score. Homework. Right now.\n\nWith Darsify, every parent gets their child's week on WhatsApp, every Sunday, without you writing a single message.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #tutors #teachers #parents",
+  "fb": "الساعة ١١:٤٧ بالليل… وولي أمر عايز تقرير كامل عن ابنه.\nمع Darsify، كل ولي أمر بيوصله تقرير أسبوعي على واتساب كل حد، من غير ما تكتب رسالة واحدة.\n\nدرّس أكتر. لاحق أقل. انضم لينا على darsify.net\n\n—\n\nPOV: it's 11:47 PM and a parent wants a full update. With Darsify, every parent gets their child's week on WhatsApp, automatically.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "POV: 11:47 PM and a parent wants a full update. Darsify sends it every Sunday on WhatsApp. #WeplanYouteach #TeachMoreChaseLess #teachersoftiktok #tutor #parents"
+ },
+ "id": "RL-02"
+}

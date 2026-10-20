@@ -1,0 +1,183 @@
+{
+ "title": "The real exam, before the real exam",
+ "family": "blue",
+ "bpm": 126,
+ "key": -3,
+ "mood": "drive",
+ "seed": 66,
+ "cover": 1.5,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.8,
+   "head": [
+    "The real exam.",
+    "*Before* the",
+    "real exam."
+   ],
+   "size": 140,
+   "y": 420,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "focus"
+      ]
+     ],
+     "x": 400,
+     "y": 1180,
+     "w": 300,
+     "t": 0.4
+    }
+   ]
+  },
+  {
+   "type": "exam",
+   "d": 5.6,
+   "tabs": [
+    "SAT",
+    "EST",
+    "ACT",
+    "IGCSE",
+    "Thanwya"
+   ],
+   "on": 0,
+   "ey": 640,
+   "section": "Math",
+   "qn": "12 of 22",
+   "q": "The function f is defined by f(x) = 3x² − 12x + 7. For what value of x does f reach its minimum?",
+   "choices": [
+    "−2",
+    "0",
+    "2",
+    "4"
+   ],
+   "pick": 2,
+   "pick_at": 2.6,
+   "next_at": 3.4,
+   "c0": 0.4,
+   "c1": 5.4,
+   "tfrom": 1908,
+   "tto": 1902,
+   "head": [
+    "Timed. Real format."
+   ],
+   "size": 96,
+   "y": 280,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "thinking"
+      ],
+      [
+       2.6,
+       "happy"
+      ]
+     ],
+     "x": 760,
+     "y": 1450,
+     "w": 220,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "chips",
+   "d": 3.6,
+   "head": [
+    "Same timer.",
+    "Same tools.",
+    "*Same pressure.*"
+   ],
+   "size": 120,
+   "y": 300,
+   "chips": [
+    {
+     "text": "Mark for review",
+     "x": 90,
+     "y": 860,
+     "t": 0.6
+    },
+    {
+     "text": "Answer eliminator",
+     "x": 420,
+     "y": 990,
+     "t": 0.85
+    },
+    {
+     "text": "Question navigator",
+     "x": 110,
+     "y": 1120,
+     "t": 1.1
+    },
+    {
+     "text": "Countdown timer",
+     "x": 470,
+     "y": 1250,
+     "t": 1.35
+    },
+    {
+     "text": "Auto-graded",
+     "x": 200,
+     "y": 1380,
+     "t": 1.6,
+     "bg": "#f26229"
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.8,
+   "head": [
+    "So exam day",
+    "*feels familiar.*"
+   ],
+   "size": 140,
+   "y": 440,
+   "sub": "Authentic mocks for SAT, EST, ACT, IGCSE and Thanwya Amma.",
+   "subt": 0.9,
+   "suby": 760,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "celebrate"
+      ]
+     ],
+     "x": 400,
+     "y": 1160,
+     "w": 300,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "SAT",
+    "EST",
+    "ACT",
+    "IGCSE",
+    "Thanwya Amma",
+    "Mocks"
+   ]
+  }
+ ],
+ "caption": {
+  "ig": "The real exam, before the real exam.\n\nDarsify mocks look and feel like the real thing: the timer, mark for review, the answer eliminator, the question navigator.\n\nSAT, EST, ACT, IGCSE and Thanwya Amma. Auto-graded, with weak topics after every paper.\n\nSo exam day feels familiar.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #IGCSE #Thanwya",
+  "fb": "الامتحان الحقيقي… قبل الامتحان الحقيقي.\nامتحانات Darsify التجريبية بنفس شكل الامتحان: التايمر، المراجعة، استبعاد الإجابات، والتنقل بين الأسئلة. SAT وEST وACT وIGCSE والثانوية العامة.\nعلشان يوم الامتحان يبقى مألوف.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nAuthentic mocks for SAT, EST, ACT, IGCSE and Thanwya Amma.\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #Thanwya",
+  "tiktok": "The real exam, before the real exam. Mocks that feel like exam day. #WeplanYouteach #SAT #IGCSE #Thanwya #studytok"
+ },
+ "id": "RL-06"
+}

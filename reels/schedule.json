@@ -1,0 +1,114 @@
+[
+ {
+  "id": "RL-01",
+  "title": "How much paper runs your class?",
+  "date": "2026-10-21",
+  "label": "Wed 21 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-21T21:00:00+03:00"
+ },
+ {
+  "id": "RL-02",
+  "title": "POV: a parent messages you at 11:47 PM",
+  "date": "2026-10-22",
+  "label": "Thu 22 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-22T21:00:00+03:00"
+ },
+ {
+  "id": "RL-03",
+  "title": "AI marks. You approve.",
+  "date": "2026-10-23",
+  "label": "Fri 23 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-23T21:00:00+03:00"
+ },
+ {
+  "id": "RL-04",
+  "title": "3 automations every tutor needs",
+  "date": "2026-10-24",
+  "label": "Sat 24 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-24T21:00:00+03:00"
+ },
+ {
+  "id": "RL-05",
+  "title": "Meet the Darsify crew",
+  "date": "2026-10-25",
+  "label": "Sun 25 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-25T21:00:00+03:00"
+ },
+ {
+  "id": "RL-06",
+  "title": "The real exam, before the real exam",
+  "date": "2026-10-26",
+  "label": "Mon 26 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-26T21:00:00+03:00"
+ },
+ {
+  "id": "RL-07",
+  "title": "Your center. Now online too.",
+  "date": "2026-10-27",
+  "label": "Tue 27 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-27T21:00:00+03:00"
+ },
+ {
+  "id": "RL-08",
+  "title": "From the canteen to the exams",
+  "date": "2026-10-28",
+  "label": "Wed 28 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-28T21:00:00+03:00"
+ },
+ {
+  "id": "RL-09",
+  "title": "Guess the weak topic",
+  "date": "2026-10-29",
+  "label": "Thu 29 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-29T21:00:00+03:00"
+ },
+ {
+  "id": "RL-10",
+  "title": "How many WhatsApp groups do you manage?",
+  "date": "2026-10-30",
+  "label": "Fri 30 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-30T21:00:00+03:00"
+ },
+ {
+  "id": "RL-11",
+  "title": "لسه بتلاحق الفلوس؟",
+  "date": "2026-10-31",
+  "label": "Sat 31 Oct",
+  "time": "9:00 PM",
+  "dueAt": "2026-10-31T21:00:00+03:00"
+ },
+ {
+  "id": "RL-12",
+  "title": "Mistakes come back as practice",
+  "date": "2026-11-01",
+  "label": "Sun 1 Nov",
+  "time": "9:00 PM",
+  "dueAt": "2026-11-01T21:00:00+03:00"
+ },
+ {
+  "id": "RL-13",
+  "title": "A tutor's evening, before Darsify",
+  "date": "2026-11-02",
+  "label": "Mon 2 Nov",
+  "time": "9:00 PM",
+  "dueAt": "2026-11-02T21:00:00+03:00"
+ },
+ {
+  "id": "RL-14",
+  "title": "One engine. Three ways to use it.",
+  "date": "2026-11-03",
+  "label": "Tue 3 Nov",
+  "time": "9:00 PM",
+  "dueAt": "2026-11-03T21:00:00+03:00"
+ }
+]

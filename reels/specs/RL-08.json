@@ -1,0 +1,211 @@
+{
+ "title": "From the canteen to the exams",
+ "family": "blue",
+ "bpm": 122,
+ "key": 2,
+ "mood": "bright",
+ "seed": 88,
+ "cover": 1.6,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.8,
+   "kicker": "Schools & universities",
+   "head": [
+    "From the *canteen*",
+    "to the *exams.*"
+   ],
+   "size": 130,
+   "y": 420,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 390,
+     "y": 1180,
+     "w": 320,
+     "t": 0.4
+    }
+   ]
+  },
+  {
+   "type": "chips",
+   "d": 4.8,
+   "head": [
+    "One school.",
+    "Too many systems."
+   ],
+   "size": 120,
+   "y": 280,
+   "merge": 3.2,
+   "my": 900,
+   "mtext": "One ecosystem",
+   "chips": [
+    {
+     "text": "Attendance",
+     "x": 90,
+     "y": 640,
+     "t": 0.4
+    },
+    {
+     "text": "Grades",
+     "x": 600,
+     "y": 600,
+     "t": 0.6
+    },
+    {
+     "text": "Fees",
+     "x": 140,
+     "y": 800,
+     "t": 0.8
+    },
+    {
+     "text": "Canteen",
+     "x": 560,
+     "y": 780,
+     "t": 1.0
+    },
+    {
+     "text": "Bus",
+     "x": 90,
+     "y": 970,
+     "t": 1.2
+    },
+    {
+     "text": "Announcements",
+     "x": 430,
+     "y": 1000,
+     "t": 1.4
+    },
+    {
+     "text": "Exams",
+     "x": 150,
+     "y": 1170,
+     "t": 1.6
+    },
+    {
+     "text": "Student affairs",
+     "x": 500,
+     "y": 1200,
+     "t": 1.8
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "d": 6.0,
+   "head": [
+    "Darsify for",
+    "*Schools & Universities*"
+   ],
+   "size": 96,
+   "y": 280,
+   "ly": 560,
+   "gap": 270,
+   "istep": 1.2,
+   "items": [
+    {
+     "title": "Leadership to classroom",
+     "desc": "Principal, heads, teachers, students and parents, connected.",
+     "icon": "building"
+    },
+    {
+     "title": "AI does the paperwork",
+     "desc": "Reports, marking, reminders and records, ready for approval.",
+     "icon": "ai"
+    },
+    {
+     "title": "Parents in the loop",
+     "desc": "A weekly report per child on WhatsApp.",
+     "icon": "chat"
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.6,
+   "head": [
+    "Less paper.",
+    "*More learning.*"
+   ],
+   "size": 150,
+   "y": 480,
+   "sub": "Book a demo at Darsify.net",
+   "subt": 0.9,
+   "suby": 820,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Canteen",
+    "Grades",
+    "Fees",
+    "Exams",
+    "Bus",
+    "Reports"
+   ],
+   "btn": "BOOK A DEMO",
+   "join": "Book a demo at <b>Darsify.net</b>"
+  }
+ ],
+ "caption": {
+  "ig": "From the canteen to the exams. Darsify for Schools & Universities.\n\nOne ecosystem that connects leadership, heads of department, teachers, students, parents and student affairs.\n\nAI and automation take the paperwork: reports, marking, reminders and records, ready for staff to approve.\n\nBook a demo at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #schools #universities",
+  "fb": "من الكانتين لحد الامتحانات.\nDarsify for Schools & Universities: سيستم واحد بيربط الإدارة ورؤساء الأقسام والمدرسين والطلبة وأولياء الأمور وشؤون الطلبة.\nوالـ AI والأتمتة بيشيلوا الشغل الورقي، والإدارة بتعتمد.\n\nاحجز ديمو على darsify.net\n\n—\n\nFrom the canteen to the exams: one ecosystem for schools and universities.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "From the canteen to the exams. One ecosystem for schools and universities. #WeplanYouteach #edtech #schools #university #AI"
+ },
+ "id": "RL-08"
+}

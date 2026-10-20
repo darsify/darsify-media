@@ -1,0 +1,238 @@
+{
+ "title": "Mistakes come back as practice",
+ "family": "blue",
+ "bpm": 112,
+ "key": 7,
+ "mood": "chill",
+ "seed": 121,
+ "cover": 1.5,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.6,
+   "kicker": "Truth",
+   "head": [
+    "Students forget",
+    "*their mistakes.*"
+   ],
+   "size": 130,
+   "y": 420,
+   "mascots": [
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "wrong"
+      ]
+     ],
+     "x": 400,
+     "y": 1180,
+     "w": 300,
+     "t": 0.4
+    }
+   ]
+  },
+  {
+   "type": "timeline",
+   "d": 5.2,
+   "head": [
+    "So Darsify",
+    "brings them *back.*"
+   ],
+   "size": 110,
+   "y": 280,
+   "ly": 640,
+   "gap": 170,
+   "rows": [
+    {
+     "time": "Day 1",
+     "text": "Wrong on the mock",
+     "t": 0.4,
+     "c": "#e5484d"
+    },
+    {
+     "time": "Day 3",
+     "text": "First review",
+     "t": 1.1
+    },
+    {
+     "time": "Day 7",
+     "text": "Second review",
+     "t": 1.8
+    },
+    {
+     "time": "Day 14",
+     "text": "Locked in",
+     "t": 2.5,
+     "c": "#22a06b",
+     "tag": "Mastered"
+    }
+   ],
+   "mascots": [
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "thinking"
+      ],
+      [
+       2.6,
+       "happy"
+      ]
+     ],
+     "x": 740,
+     "y": 1430,
+     "w": 230,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "d": 5.0,
+   "head": [
+    "Today's review"
+   ],
+   "size": 100,
+   "y": 280,
+   "py": 520,
+   "panel": {
+    "crumb": "Practice  /  Review",
+    "title": "Due today",
+    "sub": "From your last 3 mocks",
+    "blocks": [
+     {
+      "row": {
+       "l": "3x − 7 = 2x + 5",
+       "chip": "pend",
+       "ctext": "Due",
+       "to": "paid",
+       "totext": "Got it",
+       "at": 1.2
+      }
+     },
+     {
+      "row": {
+       "l": "Meaning of 'mitigate'",
+       "chip": "pend",
+       "ctext": "Due",
+       "to": "paid",
+       "totext": "Got it",
+       "at": 2.0
+      }
+     },
+     {
+      "row": {
+       "l": "Area of a sector",
+       "chip": "pend",
+       "ctext": "Due",
+       "to": "bad",
+       "totext": "Again in 2 days",
+       "at": 2.8
+      }
+     }
+    ]
+   },
+   "mascots": [
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "focus"
+      ],
+      [
+       3.0,
+       "proud"
+      ]
+     ],
+     "x": 740,
+     "y": 1430,
+     "w": 230,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.6,
+   "head": [
+    "Mistakes",
+    "become *practice.*"
+   ],
+   "size": 150,
+   "y": 460,
+   "sub": "Automatically, for every student.",
+   "subt": 0.9,
+   "suby": 780,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Mistakes",
+    "Reviews",
+    "Practice",
+    "Streaks",
+    "Mocks",
+    "Progress"
+   ]
+  }
+ ],
+ "caption": {
+  "ig": "Students forget their mistakes. Darsify doesn't.\n\nEvery wrong answer on a mock comes back as a review: on day 3, day 7, and again until it's locked in.\n\nAutomatically, for every student in every group.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #students #tutors #studytips",
+  "fb": "الطلبة بينسوا غلطاتهم… Darsify لأ.\nكل إجابة غلط في الامتحان التجريبي بترجع للطالب كمراجعة: بعد ٣ أيام، وبعد أسبوع، لحد ما يتقنها. لوحدها، لكل طالب.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nEvery mistake comes back as practice until it's locked in.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "Students forget their mistakes. Darsify brings them back as practice. #WeplanYouteach #studytok #studytips #tutor #TeachMoreChaseLess"
+ },
+ "id": "RL-12"
+}

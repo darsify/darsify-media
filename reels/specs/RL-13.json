@@ -1,0 +1,186 @@
+{
+ "title": "A tutor's evening, before Darsify",
+ "family": "orange",
+ "bpm": 120,
+ "key": 2,
+ "mood": "drive",
+ "seed": 131,
+ "cover": 1.5,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.6,
+   "kicker": "Before Darsify",
+   "head": [
+    "A tutor's",
+    "*evening.*"
+   ],
+   "size": 170,
+   "y": 420,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "neutral"
+      ]
+     ],
+     "x": 390,
+     "y": 1180,
+     "w": 320,
+     "t": 0.4
+    }
+   ]
+  },
+  {
+   "type": "timeline",
+   "d": 6.2,
+   "head": [
+    "The *after-class* shift"
+   ],
+   "size": 100,
+   "y": 280,
+   "ly": 560,
+   "gap": 160,
+   "rows": [
+    {
+     "time": "5:00 PM",
+     "text": "Check payment screenshots",
+     "t": 0.3,
+     "strike": 3.6
+    },
+    {
+     "time": "6:00 PM",
+     "text": "Resend the Zoom link",
+     "t": 0.8,
+     "strike": 3.85
+    },
+    {
+     "time": "6:45 PM",
+     "text": "Attendance by hand",
+     "t": 1.3,
+     "strike": 4.1
+    },
+    {
+     "time": "9:00 PM",
+     "text": "25 parent updates",
+     "t": 1.8,
+     "strike": 4.35
+    },
+    {
+     "time": "11:47 PM",
+     "text": "\"One quick question\"",
+     "t": 2.3,
+     "strike": 4.6
+    }
+   ],
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "annoyed"
+      ],
+      [
+       2.3,
+       "sleeping"
+      ],
+      [
+       3.6,
+       "surprised"
+      ],
+      [
+       4.8,
+       "happy"
+      ]
+     ],
+     "x": 720,
+     "y": 1440,
+     "w": 250,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.8,
+   "head": [
+    "With Darsify,",
+    "*it runs itself.*"
+   ],
+   "size": 140,
+   "y": 440,
+   "sub": "So your evening goes back to teaching. Or resting.",
+   "subt": 0.9,
+   "suby": 760,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Payments",
+    "Links",
+    "Attendance",
+    "Reports",
+    "Questions",
+    "Reminders"
+   ]
+  }
+ ],
+ "caption": {
+  "ig": "A tutor's evening, before Darsify:\n\n5:00 PM payment screenshots\n6:00 PM resend the Zoom link\n6:45 PM attendance by hand\n9:00 PM 25 parent updates\n11:47 PM \"one quick question\"\n\nWith Darsify, all of that runs itself. Your evening goes back to teaching. Or resting.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #teacherlife #tutors #teachers",
+  "fb": "مساء أي مدرس قبل Darsify:\n٥ م سكرينات التحويل\n٦ م تبعت لينك الزووم تاني\n٦:٤٥ م الحضور بإيدك\n٩ م ٢٥ رسالة لأولياء الأمور\n١١:٤٧ م \"سؤال صغير بس\"\nمع Darsify كل ده بيشتغل لوحده.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "A tutor's evening before Darsify. Which one hits hardest? #WeplanYouteach #teacherlife #teachersoftiktok #tutor #TeachMoreChaseLess"
+ },
+ "id": "RL-13"
+}

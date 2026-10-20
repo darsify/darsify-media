@@ -1,0 +1,175 @@
+{
+ "title": "One engine. Three ways to use it.",
+ "family": "ink",
+ "bpm": 118,
+ "key": 0,
+ "mood": "bright",
+ "seed": 141,
+ "cover": 1.5,
+ "scenes": [
+  {
+   "type": "hook",
+   "d": 2.8,
+   "head": [
+    "One engine.",
+    "*Three ways*",
+    "to use it."
+   ],
+   "size": 150,
+   "y": 420,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.5
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.6
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.7,
+     "ph": 2
+    }
+   ]
+  },
+  {
+   "type": "tiles",
+   "d": 5.6,
+   "head": [
+    "Darsify is",
+    "built for"
+   ],
+   "size": 110,
+   "y": 280,
+   "ty": 560,
+   "gap": 290,
+   "tiles": [
+    {
+     "title": "Tutors",
+     "desc": "Mocks, marking, payments and parent reports.",
+     "icon": "person",
+     "c": "#f26229"
+    },
+    {
+     "title": "Academies",
+     "desc": "All your tutors and students, online and on-ground.",
+     "icon": "building",
+     "c": "#2655a3"
+    },
+    {
+     "title": "Schools & universities",
+     "desc": "From the canteen to the exams, one ecosystem.",
+     "icon": "school",
+     "c": "#f26229"
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.8,
+   "head": [
+    "All powered by",
+    "*AI + automation.*"
+   ],
+   "size": 125,
+   "y": 440,
+   "sub": "Less paperwork. More teaching.",
+   "subt": 0.9,
+   "suby": 740,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "Tutors",
+    "Academies",
+    "Schools",
+    "Universities",
+    "AI",
+    "Automation"
+   ]
+  }
+ ],
+ "caption": {
+  "ig": "One engine. Three ways to use it.\n\nDarsify for Tutors: mocks, marking, payments and parent reports.\nDarsify for Academies: all your tutors and students, online and on-ground.\nDarsify for Schools & Universities: from the canteen to the exams, one ecosystem.\n\nAll powered by AI and automation.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #AI #education",
+  "fb": "محرك واحد… ٣ طرق تستخدمه:\nDarsify للمدرسين، للأكاديميات والسنترات، وللمدارس والجامعات. وكله شغال بالـ AI والأتمتة.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nOne engine, three ways: tutors, academies, schools & universities.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+  "tiktok": "One engine, three ways: tutors, academies, schools and universities. #WeplanYouteach #edtech #AI #education #TeachMoreChaseLess"
+ },
+ "id": "RL-14"
+}
