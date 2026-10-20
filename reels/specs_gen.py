@@ -177,7 +177,7 @@ R['RL-11'] = dict(title='لسه بتلاحق الفلوس؟', lang='ar', family=
        mascots=[M('ustaz', [[0, 'concerned'], [2.4, 'annoyed']], 720, 1330, 250, .2)]),
   dict(type='split', d=5.6, head=['قبل وبعد'], size=120, y=280, ly=520,
        left=dict(title='قبل', t=.3, items=[dict(text='تفتح الشات', t=.6, strike=3.6), dict(text='تدور على السكرين', t=1.0, strike=3.8), dict(text='تأكد التحويل', t=1.4, strike=4.0), dict(text='تبعت اللينك', t=1.8, strike=4.2)]),
-       right=dict(title='مع Darsify', t=2.2, items=[dict(text='الطالب بيدفع', t=2.5), dict(text='الدفع بيتأكد', t=2.9), dict(text='اللينك بيوصل لوحده', t=3.3)])),
+       right=dict(title='Darsify مع', t=2.2, items=[dict(text='الطالب بيدفع', t=2.5), dict(text='الدفع بيتأكد', t=2.9), dict(text='اللينك بيوصل لوحده', t=3.3)])),
   dict(type='hook', d=2.6, head=['درّس أكتر.', '*لاحق أقل.*'], size=170, y=480, mascots=trio()),
   END(['الدفع', 'اللينك', 'التذكير', 'الحضور', 'التقارير', 'الامتحانات'])],
   caption=dict(
