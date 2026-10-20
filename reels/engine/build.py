@@ -41,7 +41,7 @@ def svg_mascot(name, w):
 
 class B:
     """Collects markup + audio events for one scene; times relative to scene start."""
-    def __init__(s, spec): s.h=[]; s.ev=[]; s.spec=spec; s.ar=spec.get('lang')=='ar'
+    def __init__(s, spec): s.h=[]; s.hud=[]; s.ev=[]; s.spec=spec; s.ar=spec.get('lang')=='ar'; s.sc={}
     def add(s, x): s.h.append(x)
     def e(s, t, kind, **kw): s.ev.append(dict(t=round(t,3), k=kind, **kw))
 
@@ -59,6 +59,8 @@ def head(b, lines, t0=.15, y=300, size=150, step=.1, color=WHITE, accent=None, a
     accent = accent or b.spec['_accent']
     fam = 'A' if b.ar else 'M'
     style = f'top:{y}px;left:80px;right:80px;text-align:{"right" if b.ar and align=="start" else align};font-family:{fam};font-weight:{weight};font-size:{size}px;line-height:{lh};color:{color};' + ('' if b.ar else 'text-transform:uppercase;letter-spacing:-.01em;')
+    hz = b.sc.get('headz')
+    if hz: style += f'transform:translateZ({hz}px);'
     b.add(f'<div class="abs" style="{style}" {"dir=rtl" if b.ar else ""}>')
     k = 0
     for ln in lines:
@@ -75,7 +77,7 @@ def text(b, s, t, y, size=46, color=WHITE, weight=400, a='up', x=80, w=920, alig
     fam = 'A' if b.ar else 'M'; al = align or ('right' if b.ar else 'left')
     b.add(f'<div class="abs" data-in="{t}" data-a="{a}" style="left:{x}px;width:{w}px;top:{y}px;font-family:{fam};font-size:{size}px;font-weight:{weight};color:{color};line-height:1.3;text-align:{al};{extra}" {"dir=rtl" if b.ar else ""}>{s}</div>')
 
-def mascot(b, who, ex, x, y, w=300, t=0.2, hop=None, jump=None, shake=None, out=None, ph=0, bubble=None):
+def mascot(b, who, ex, x, y, w=300, t=0.2, hop=None, jump=None, shake=None, out=None, ph=0, bubble=None, z=None, talk=None):
     exs = sorted(set(e for _, e in ex))
     lay = ''.join(f'<div class="ex" data-e="{e}" style="position:absolute;inset:0;opacity:0">{svg_mascot(f"{who}-{e}", w)}</div>' for e in exs)
     attrs = f'data-in="{t}" data-ex=\'{json.dumps(ex)}\' data-ph="{ph}"'
@@ -83,6 +85,8 @@ def mascot(b, who, ex, x, y, w=300, t=0.2, hop=None, jump=None, shake=None, out=
     if jump: attrs += f' data-jump="{",".join(map(str,jump))}"'
     if shake is not None: attrs += f' data-shake="{shake}"'
     if out is not None: attrs += f' data-out="{out}"'
+    if z: attrs += f' data-z="{z}"'
+    if talk: attrs += f' data-talk="{"|".join(f"{a:.2f}:{c:.2f}" for a, c in talk)}"'
     b.add(f'<div class="masc" {attrs} style="left:{x}px;top:{y}px;width:{w}px;height:{round(w*294/278)}px">{lay}</div>')
     b.e(t+.1, 'whoosh_s')
     if jump:
@@ -96,7 +100,7 @@ def mascot(b, who, ex, x, y, w=300, t=0.2, hop=None, jump=None, shake=None, out=
 def mascots_default(b, sc, base_y=1240):
     for m in sc.get('mascots', []):
         mascot(b, m['who'], m.get('ex', [[0, 'happy']]), m.get('x', 390), m.get('y', base_y), m.get('w', 300), m.get('t', .2),
-               m.get('hop'), m.get('jump'), m.get('shake'), m.get('out'), m.get('ph', 0), m.get('bubble'))
+               m.get('hop'), m.get('jump'), m.get('shake'), m.get('out'), m.get('ph', 0), m.get('bubble'), m.get('z'))
 
 # ---------------- scene types ----------------
 def sc_hook(b, sc):
@@ -205,7 +209,7 @@ def sc_ui(b, sc):
     if p.get('stamp'):
         st = p['stamp']; stamp = f'<div class="stampT" data-in="{st["t"]}" data-a="stamp" data-rot="-12" style="left:{st.get("x",420)}px;top:{st.get("y",300)}px;border-color:{GREEN};color:{GREEN};background:rgba(255,255,255,.96);font-size:54px">{esc(st["text"])}</div>'
         b.e(st['t'], 'stamp')
-    b.add(f'<div class="pnl" style="top:{sc.get("py",600)}px"><div class="pbar"><img src="{mark}" style="width:34px"><span class="crumb">{esc(p.get("crumb","Darsify"))}</span><span class="pnew">+ New</span></div>'
+    b.add(f'<div class="pnl" style="top:{sc.get("py",600)}px;{"transform:translateZ(%spx);" % sc["pz"] if sc.get("pz") else ""}"><div class="pbar"><img src="{mark}" style="width:34px"><span class="crumb">{esc(p.get("crumb","Darsify"))}</span><span class="pnew">+ New</span></div>'
           f'<div style="padding:34px 44px 40px;position:relative"><div class="ptitle">{esc(p["title"])}</div>' + (f'<div class="psub">{esc(p["sub"])}</div>' if p.get('sub') else '') + cards + stamp + '</div></div>')
     mascots_default(b, sc, 1380)
 
@@ -322,8 +326,101 @@ def sc_end(b, sc):
         mascot(b, who, [[0, 'happy'], [2.6 + k * .12, 'celebrate']], x, 1290, 260 if who != 'ustaz' else 280, 2.25 + k * .12, hop=2.6 + k * .12, ph=k)
     b.e(.05, 'whoosh'); b.e(1.0, 'sparkle'); b.e(1.35, 'thump'); b.e(1.75, 'pop'); b.e(2.0, 'pop_hi')
 
+
+# ---------------- v2: story (classroom dialogue), ring (3D carousel), flip card ----------------
+SHOTS = {'wide': (540, 960, 1.0, 0, 0), 'class': (540, 1020, 1.08, 0, 0),
+         'dars': (310, 1250, 1.3, 6, 0), 'dara': (790, 1250, 1.3, -6, 0), 'students': (540, 1320, 1.15, 0, -2),
+         'ustaz': (700, 690, 1.34, -7, 2), 'board': (395, 590, 1.42, 5, 3), 'boardwide': (540, 640, 1.18, 0, 2)}
+VOICE = {'ustaz': 0, 'dars': 1, 'dara': 2}
+
+def bubble_html(b, who, text, t, t_out, pos):
+    side = pos.get('side', 'l'); fam = 'font-family:A;' if b.ar else ''
+    anchor = f'left:{pos["x"]}px;' if side == 'l' else f'right:{1080 - pos["x"]}px;'
+    tt = t + .12; t1 = tt + max(.35, len(text) * .032)
+    return (f'<div class="sbub {side} {who}" data-in="{t}" data-a="pop" data-base="translateZ(60px) translateY(-100%)" data-out="{t_out}" data-outa="shrink" style="{anchor}top:{pos["y"]}px;{fam}" {"dir=rtl" if b.ar else ""}>'
+            f'<span class="ghost">{esc(text)}</span><span class="typed" data-type="{tt:.2f},{t1:.2f}" data-text="{esc(text)}"></span></div>'), t1
+
+def sc_story(b, sc):
+    ar = b.ar; fam = 'font-family:A;' if ar else ''
+    # --- set: floor, board, clock, desks (world space; camera moves through it) ---
+    b.add('<div class="abs floor"></div>')
+    b.add('<div class="abs wallline"></div>')
+    mark = uri(A / 'logos' / 'darsify-mark-white.svg')
+    b.add(f'<div class="board" style="transform:translateZ(-30px)"><img src="{mark}" class="bmark"><div class="btitle" style="{fam}">{esc(sc.get("boardtitle", ""))}</div>')
+    for it in sc.get('board', []):
+        t = it['t']
+        if 'write' in it:
+            t1 = t + it.get('dur', max(.4, len(it['write']) * .045))
+            b.add(f'<div class="bw" style="left:{it.get("x",40)}px;top:{it.get("y",110)}px;font-size:{it.get("size",50)}px;color:{it.get("c","#fff")};{fam}" {"dir=rtl" if ar else ""}><span data-type="{t:.2f},{t1:.2f}" data-text="{esc(it["write"])}"></span></div>')
+            b.e(t, 'chalk', t1=t1)
+        elif 'panel' in it:
+            pn = it['panel']; cards = ''.join(f'<div class="pcard" style="margin-top:20px">' + panel_rows(b, c.get('blocks', [])) + '</div>' for c in pn.get('cards', [pn]))
+            b.add(f'<div class="pnl bp" data-in="{t}" data-a="pop" style="left:{it.get("x",30)}px;top:{it.get("y",100)}px;width:920px;transform-origin:0 0" data-base="scale({it.get("scale",.63)})"><div class="pbar"><img src="{mark}" style="width:34px"><span class="crumb">{esc(pn.get("crumb","Darsify"))}</span><span class="pnew">+ New</span></div>'
+                  f'<div style="padding:30px 40px 36px"><div class="ptitle">{esc(pn["title"])}</div>' + (f'<div class="psub">{esc(pn["sub"])}</div>' if pn.get('sub') else '') + cards + '</div></div>')
+            b.e(t, 'card')
+        elif 'stamp' in it:
+            b.add(f'<div class="stampT" data-in="{t}" data-a="stamp" data-rot="-9" style="left:{it.get("x",120)}px;top:{it.get("y",380)}px;border-color:{it.get("c",ORANGE)};color:{it.get("c",ORANGE)};background:#fff;font-size:{it.get("size",52)}px;{fam}">{esc(it["stamp"])}</div>')
+            b.e(t, 'stamp')
+    b.add('</div>')
+    b.add('<div class="clock" style="transform:translateZ(-30px)"><div class="hand h" data-spin="0,%s,%s" data-r0="40"></div><div class="hand m" data-spin="0,%s,%s" data-r0="0"></div><div class="cdot"></div></div>' % (sc['d'], sc.get('clockh', 30), sc['d'], sc.get('clockm', 360)))
+    # --- cast ---
+    cast = {'ustaz': dict(x=730, y=610, w=300), 'dars': dict(x=110, y=1135, w=330), 'dara': dict(x=640, y=1135, w=330)}
+    cast.update({k: {**cast.get(k, {}), **v} for k, v in sc.get('cast', {}).items()})
+    present = sc.get('present', ['ustaz', 'dars', 'dara'])
+    ex = {w: list(cast[w].get('ex', [[0, 'neutral' if w != 'ustaz' else 'happy']])) for w in present}
+    talk = {w: [] for w in present}
+    bub_pos = {'dars': dict(x=70, y=1120, side='l'), 'dara': dict(x=1010, y=1120, side='r'), 'ustaz': dict(x=930, y=300, side='r')}
+    kf = [[0, *SHOTS[sc.get('open', 'wide')], .01]]
+    for c in sc.get('shots', []):
+        kf.append([c[0], *SHOTS[c[1]], c[2] if len(c) > 2 else .7])
+    lines = sc['lines']
+    for i, ln in enumerate(lines):
+        who = ln['who']; t = ln['t']
+        dur = ln.get('dur', max(1.5, .9 + len(ln['text']) * .045))
+        nxt = lines[i + 1]['t'] if i + 1 < len(lines) else sc['d']
+        t_out = min(t + dur, nxt - .05) if ln.get('hold') is None else ln['hold']
+        html_, t1 = bubble_html(b, who, ln['text'], t, t_out, {**bub_pos[who], **ln.get('pos', {})})
+        b.add(html_)
+        b.e(t, 'pop'); b.e(t + .12, 'talk', t1=t1, who=VOICE.get(who, 1))
+        talk[who].append((t + .1, t1 + .05))
+        if ln.get('ex'): ex[who].append([t, ln['ex']])
+        for rw, re_ in ln.get('react', {}).items(): ex[rw].append([ln.get('rt', t + .5), re_])
+        shot = ln.get('shot', who)
+        if shot and shot != 'none':
+            kf.append([max(0, t - .25), *SHOTS[shot], ln.get('cd', .6)]); b.e(max(0, t - .25), 'cam')
+    kf.sort(key=lambda k: k[0])
+    # desks drawn after students so they sit in front
+    for w in present:
+        c = cast[w]; e_ = sorted(ex[w], key=lambda q: q[0])
+        mascot(b, w, e_, c['x'], c['y'], c['w'], c.get('t', .1), hop=c.get('hop'), jump=c.get('jump'), ph=VOICE[w], z=c.get('z', 0 if w == 'ustaz' else 20), talk=talk[w])
+    for x in (60, 590):
+        b.add(f'<div class="desk" style="left:{x}px;transform:translateZ(60px)"><div class="dtop"></div><div class="dfront"></div></div>')
+    b.cam = kf
+    if sc.get('caption'):
+        cp = sc['caption']; b.hud.append(f'<div class="capt" data-in="{cp.get("t",.2)}" data-a="up" style="{fam}" {"dir=rtl" if ar else ""}>{esc(cp["text"])}</div>')
+
+def sc_ring(b, sc):
+    end = head(b, sc['head'], t0=.1, y=sc.get('y', 280), size=sc.get('size', 104), step=.08) if sc.get('head') else .2
+    y = sc.get('ry', 900)
+    items = ''.join(f'<div class="rt" style="{"direction:rtl;font-family:A;" if b.ar else ""}{"background:"+tl["bg"]+";" if tl.get("bg") else ""}">{('<div style="position:absolute;right:30px;top:30px">' + svg_mascot(tl["mascot"], 260) + '</div><div style="height:270px"></div>') if tl.get("mascot") else ('<div class="tic" style="background:' + tl.get("c",ORANGE) + '">' + icon(tl.get("icon","star"),72) + '</div>')}<div class="tt">{esc(tl["title"])}</div><div class="td">{esc(tl["desc"])}</div></div>' for tl in sc['tiles'])
+    steps = sc.get('steps', [[0, 0]] + [[sc.get('t0', 1.2) + i * sc.get('step', 1.4), i] for i in range(1, len(sc['tiles']))])
+    b.add(f'<div class="ringw" data-in="{sc.get("tin_r",.3)}" data-a="zoom" style="top:{y}px"><div class="ring" data-ring=\'{json.dumps(steps)}\' data-r="{sc.get("r",400)}">{items}</div></div>')
+    for st in steps[1:]: b.e(st[0], 'whoosh_s'); b.e(st[0] + .45, 'card')
+    b.e(sc.get('tin_r', .3), 'card')
+    mascots_default(b, sc, 1450)
+
+def sc_flip(b, sc):
+    if sc.get('head'): head(b, sc['head'], t0=.1, y=sc.get('y', 280), size=sc.get('size', 104), step=.08)
+    F, Bk = sc['front'], sc['back']; fam = 'font-family:A;' if b.ar else ''
+    def face(f, cls):
+        rows = ''.join(f'<div class="frow">' + (icon('x', 34, '#ffb59a', 3) if cls == 'front' else icon('check', 34, '#4fd39a', 3)) + f'<span>{esc(r)}</span></div>' for r in f.get('rows', []))
+        return f'<div class="face {cls}" style="{fam}" {"dir=rtl" if b.ar else ""}><div class="fk">{esc(f.get("kicker",""))}</div><div class="ft">{esc(f["title"])}</div>{rows}</div>'
+    b.add(f'<div class="flipw" data-in="{sc.get("t0",.3)}" data-a="pop" style="top:{sc.get("fy",620)}px"><div class="flipc" data-flip="{sc["at"]}">{face(F,"front")}{face(Bk,"back")}</div></div>')
+    b.e(sc.get('t0', .3), 'card'); b.e(sc['at'], 'whoosh'); b.e(sc['at'] + .6, 'sparkle')
+    mascots_default(b, sc, 1450)
+
 TYPES = dict(hook=sc_hook, chat=sc_chat, list=sc_list, ui=sc_ui, split=sc_split, counter=sc_counter, chips=sc_chips,
-             paper=sc_paper, exam=sc_exam, timeline=sc_timeline, tiles=sc_tiles, end=sc_end)
+             paper=sc_paper, exam=sc_exam, timeline=sc_timeline, tiles=sc_tiles, end=sc_end, story=sc_story, ring=sc_ring, flip=sc_flip)
 
 FAM = {
  'orange': ('radial-gradient(90% 45% at 0% 0%,#fe6e27 0%,rgba(254,110,39,0) 70%),linear-gradient(180deg,#f26229 0%,#cb4627 38%,#5d3222 72%,#000a16 100%)', INK),
@@ -399,6 +496,38 @@ html,body{width:1080px;height:1920px;overflow:hidden;font-family:M,Arial;color:#
 .tt{font-size:50px;font-weight:800}.td{font-size:32px;color:rgba(255,255,255,.88);margin-top:10px;line-height:1.3}
 .ec{position:absolute;height:84px;padding:0 34px;border:3px solid #0b1e30;color:#0b1e30;border-radius:999px;font-size:34px;font-weight:700;display:flex;align-items:center;text-transform:uppercase;white-space:nowrap}
 .btnJ{position:absolute;left:340px;top:1060px;width:400px;height:110px;border-radius:999px;background:#f26229;color:#fff;font-size:44px;font-weight:800;display:flex;align-items:center;justify-content:center;letter-spacing:.04em;box-shadow:0 18px 36px rgba(242,98,41,.35)}
+
+.scene{perspective:1800px;perspective-origin:540px 960px}
+.cam{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0;transform-style:preserve-3d}
+.floor{left:-700px;width:2480px;top:930px;height:1700px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 3px,transparent 3px 160px),linear-gradient(180deg,rgba(5,15,26,.35),rgba(5,15,26,.75))}
+.wallline{left:-700px;width:2480px;top:918px;height:14px;background:rgba(255,255,255,.12)}
+.board{position:absolute;left:60px;top:290px;width:660px;height:580px;background:#0b1e30;border:16px solid #2655a3;border-radius:22px;box-shadow:0 30px 60px rgba(0,0,0,.45);overflow:visible}
+.bmark{position:absolute;right:22px;top:20px;width:42px;opacity:.6}
+.btitle{position:absolute;left:34px;top:24px;font-size:30px;font-weight:700;color:#8fa1bd;letter-spacing:.06em;text-transform:uppercase}
+.bw{position:absolute;font-weight:800;white-space:nowrap;line-height:1.1}
+.bp{position:absolute}
+.clock{position:absolute;left:805px;top:330px;width:150px;height:150px;border-radius:50%;background:#fff;border:10px solid #2655a3;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+.hand{position:absolute;left:65px;bottom:65px;width:10px;border-radius:5px;background:#0b1e30;transform-origin:50% 100%}
+.hand.h{height:42px;left:65px}.hand.m{height:58px;background:#f26229}
+.cdot{position:absolute;left:60px;top:60px;width:20px;height:20px;border-radius:50%;background:#0b1e30}
+.desk{position:absolute;top:1395px;width:430px;height:260px}
+.dtop{height:38px;border-radius:14px;background:#eef3f8;box-shadow:0 8px 0 #c9d4e2}
+.dfront{margin:0 18px;height:200px;background:linear-gradient(180deg,#2655a3,#1c4486);border-radius:0 0 18px 18px}
+.sbub{position:absolute;max-width:520px;padding:24px 34px;background:#fff;color:#0b1e30;font-size:44px;font-weight:700;line-height:1.25;border-radius:42px;box-shadow:0 16px 34px rgba(0,0,0,.35);opacity:0;transform:translateZ(120px)}
+.sbub.l{border-bottom-left-radius:10px;transform-origin:0% 100%}.sbub.r{border-bottom-right-radius:10px;transform-origin:100% 100%}
+.sbub.ustaz{background:#f26229;color:#fff}.sbub.dara{background:#fff}.sbub.dars{background:#fff}
+.sbub .ghost{visibility:hidden}.sbub .typed{position:absolute;left:34px;right:34px;top:24px}
+.capt{position:absolute;left:80px;right:80px;top:270px;text-align:center;font-size:54px;font-weight:800;text-transform:uppercase;text-shadow:0 6px 18px rgba(0,0,0,.45)}
+.ringw{position:absolute;left:0;width:1080px;height:0;transform-style:preserve-3d}
+.ring{position:absolute;left:540px;top:0;transform-style:preserve-3d}
+.rt{position:absolute;left:-360px;top:0;width:720px;height:560px;padding:44px;border-radius:44px;background:#12305c;border:3px solid rgba(255,255,255,.25);box-shadow:0 30px 60px rgba(0,0,0,.4);backface-visibility:hidden}
+.rt .tic{margin-bottom:34px}.rt .tt{font-size:58px}.rt .td{font-size:36px}
+.flipw{position:absolute;left:110px;width:860px;height:760px;perspective:2200px}
+.flipc{position:absolute;inset:0;transform-style:preserve-3d}
+.face{position:absolute;inset:0;border-radius:48px;padding:56px;backface-visibility:hidden;box-shadow:0 34px 70px rgba(0,0,0,.45)}
+.face.front{background:#3a2216;border:3px solid rgba(255,181,154,.4)}.face.back{background:#fff;color:#0b1e30;transform:rotateY(180deg)}
+.fk{font-size:34px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.75}.ft{font-size:76px;font-weight:800;line-height:1.05;margin:16px 0 34px}
+.frow{display:flex;align-items:center;gap:22px;font-size:42px;font-weight:700;margin:22px 0}
 #wipe{position:absolute;inset:0;background:#0b1e30;clip-path:circle(0% at 50% 62%);opacity:0}
 """
 
@@ -408,17 +537,25 @@ def build(spec_path, out_dir):
     fam = spec.get('family', 'orange'); spec['_accent'] = FAM[fam][1]
     t = 0.0; scenes = []; events = []; bgs = []
     for i, sc in enumerate(spec['scenes']):
-        b = B(spec); b.idx = i
+        b = B(spec); b.idx = i; b.sc = sc; b.cam = None
         f = sc.get('family', fam if sc['type'] != 'end' else None)
         if f: spec['_accent'] = sc.get('accent') or FAM[f][1]
         TYPES[sc['type']](b, sc)
         d = sc['d']; s, e = t, t + d
         last = i == len(spec['scenes']) - 1
         tin = sc.get('tin', 'cut' if sc['type'] == 'end' else 'up')
-        scenes.append(f'<div class="scene" id="S{i}" data-s="{s:.3f}" data-e="{e:.3f}" data-tin="{tin}" {"data-last=1" if last else ""}>' + ''.join(b.h) + '</div>')
+        nxt = spec['scenes'][i + 1] if not last else {}
+        tout = 'whip' if nxt.get('tin') == 'whip' else ''
+        kf = b.cam or sc.get('cam') or [[0, 540, 960, 1, 0, 0, .01]]
+        if b.cam is None and sc.get('cam'):
+            for k in kf[1:]: b.e(k[0], 'cam')
+        if tin in ('whip',): events.append(dict(t=round(s, 3), k='whip'))
+        if tin in ('flip', 'dolly', 'drop'): events.append(dict(t=round(s, 3), k='whoosh'))
+        scenes.append(f'<div class="scene" id="S{i}" data-s="{s:.3f}" data-e="{e:.3f}" data-tin="{tin}" data-tout="{tout}" {"data-last=1" if last else ""}>'
+                      f'<div class="cam" data-cam=\'{json.dumps(kf)}\' data-drift="{sc.get("drift", 0)}">' + ''.join(b.h) + '</div>' + ''.join(b.hud) + '</div>')
         if f: bgs.append((f, s, e))
         events += [dict(ev, t=round(ev['t'] + s, 3), **({'t1': round(ev['t1'] + s, 3)} if 't1' in ev else {})) for ev in b.ev]
-        if i > 0 and sc['type'] != 'end': events.append(dict(t=round(s, 3), k='cut'))
+        if i > 0 and sc['type'] != 'end' and tin in ('up', 'zoom', 'cut'): events.append(dict(t=round(s, 3), k='cut'))
         if sc['type'] == 'end': events.append(dict(t=round(s - .45, 3), k='wipe')); spec['_endt'] = s
         t = e
     total = round(t, 3)

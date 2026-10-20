@@ -1,147 +1,131 @@
 {
  "title": "AI marks. You approve.",
  "family": "blue",
- "bpm": 120,
+ "bpm": 112,
  "key": 5,
- "mood": "drive",
+ "mood": "warm",
  "seed": 33,
- "cover": 1.4,
+ "cover": 6.2,
  "scenes": [
   {
-   "type": "hook",
-   "d": 2.6,
-   "kicker": "Marking night",
-   "head": [
-    "30 essays.",
-    "*One evening.*"
-   ],
-   "size": 160,
-   "y": 400,
-   "mascots": [
+   "type": "story",
+   "d": 12.8,
+   "open": "class",
+   "boardtitle": "Essays · Group A",
+   "lines": [
+    {
+     "who": "dars",
+     "t": 0.5,
+     "text": "Sir, when do we get our essays back?",
+     "ex": "thinking"
+    },
     {
      "who": "ustaz",
-     "ex": [
-      [
-       0,
-       "sleeping"
-      ]
-     ],
-     "x": 390,
-     "y": 1150,
-     "w": 320,
-     "t": 0.4
-    }
-   ]
-  },
-  {
-   "type": "counter",
-   "d": 3.4,
-   "kicker": "With Darsify",
-   "from": 0,
-   "to": 30,
-   "t0": 0.2,
-   "t1": 1.5,
-   "label": "essays with a suggested grade",
-   "sub": "Marked against your own rubric.",
-   "y": 480,
-   "mascots": [
-    {
-     "who": "ustaz",
-     "ex": [
-      [
-       0,
-       "surprised"
-      ],
-      [
-       1.6,
-       "happy"
-      ]
-     ],
-     "x": 390,
-     "y": 1230,
-     "w": 280,
-     "t": 0.2
-    }
-   ]
-  },
-  {
-   "type": "ui",
-   "d": 5.6,
-   "head": [
-    "Check it in",
-    "*seconds.*"
-   ],
-   "size": 100,
-   "y": 280,
-   "py": 560,
-   "panel": {
-    "crumb": "Marking  /  Essay",
-    "title": "Should schools replace textbooks?",
-    "sub": "Omar K. · Question 2",
-    "blocks": [
-     {
-      "bar": {
-       "l": "Clear position",
-       "w": 67,
-       "v": "2 / 3",
-       "at": 0.5
-      }
-     },
-     {
-      "bar": {
-       "l": "Evidence",
-       "w": 75,
-       "v": "3 / 4",
-       "at": 0.8
-      }
-     },
-     {
-      "bar": {
-       "l": "Organisation",
-       "w": 67,
-       "v": "2 / 3",
-       "at": 1.1
-      }
-     },
-     {
-      "row": {
-       "l": "AI suggests",
-       "chip": "info",
-       "ctext": "7 / 10"
-      }
-     },
-     {
-      "btn": {
-       "label": "Approve 7/10",
-       "at": 3.0,
-       "toast": "Sent to Omar with feedback"
-      }
+     "t": 2.9,
+     "text": "Tonight.",
+     "ex": "proud",
+     "react": {
+      "dars": "surprised"
      }
-    ]
-   },
-   "mascots": [
+    },
+    {
+     "who": "dara",
+     "t": 4.1,
+     "text": "All 30 of them?!",
+     "ex": "surprised"
+    },
     {
      "who": "ustaz",
-     "ex": [
-      [
-       0,
-       "focus"
-      ],
-      [
-       3.2,
-       "proud"
-      ]
-     ],
-     "x": 720,
-     "y": 1440,
-     "w": 250,
-     "t": 0.3
+     "t": 5.7,
+     "text": "Darsify marks them against my rubric.",
+     "ex": "happy",
+     "shot": "boardwide",
+     "react": {
+      "dara": "thinking"
+     }
+    },
+    {
+     "who": "ustaz",
+     "t": 8.7,
+     "text": "Then I check and approve.",
+     "ex": "focus",
+     "shot": "boardwide"
+    },
+    {
+     "who": "dars",
+     "t": 10.9,
+     "text": "That fast?!",
+     "ex": "celebrate",
+     "shot": "students",
+     "react": {
+      "dara": "celebrate"
+     }
     }
-   ]
+   ],
+   "board": [
+    {
+     "t": 6.2,
+     "panel": {
+      "crumb": "Marking  /  Essay",
+      "title": "Omar K. · Question 2",
+      "blocks": [
+       {
+        "bar": {
+         "l": "Clear position",
+         "w": 67,
+         "v": "2 / 3",
+         "at": 6.8
+        }
+       },
+       {
+        "bar": {
+         "l": "Evidence",
+         "w": 75,
+         "v": "3 / 4",
+         "at": 7.1
+        }
+       },
+       {
+        "bar": {
+         "l": "Organisation",
+         "w": 67,
+         "v": "2 / 3",
+         "at": 7.4
+        }
+       },
+       {
+        "row": {
+         "l": "AI suggests",
+         "chip": "info",
+         "ctext": "7 / 10"
+        }
+       },
+       {
+        "btn": {
+         "label": "Approve 7/10",
+         "at": 9.9,
+         "toast": "Sent with feedback"
+        }
+       }
+      ]
+     },
+     "x": 20,
+     "y": 75,
+     "scale": 0.66
+    }
+   ],
+   "cast": {
+    "dars": {
+     "jump": [
+      11.2
+     ]
+    }
+   }
   },
   {
    "type": "hook",
-   "d": 2.8,
+   "d": 3.0,
+   "tin": "whip",
    "head": [
     "AI suggests.",
     "*You approve.*"
@@ -180,10 +164,10 @@
    ]
   }
  ],
+ "id": "RL-03",
  "caption": {
   "ig": "30 essays. One evening.\n\nDarsify reads every written answer against your rubric and suggests a grade with the reasons.\n\nYou check it, adjust it, approve it. Nothing reaches a student until you say so.\n\nAI suggests. You approve.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #teachers #tutors #edtech",
   "fb": "٣٠ مقال في ليلة واحدة؟\nDarsify بيصحح كل إجابة مكتوبة حسب معاييرك ويقترح الدرجة بالأسباب، وإنت اللي بتعتمد. مفيش درجة بتوصل للطالب غير لما توافق.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\n30 essays, one evening. Darsify suggests a grade against your rubric; you approve it.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
   "tiktok": "30 essays, one evening. AI suggests the grade, you approve it. #WeplanYouteach #TeachMoreChaseLess #teachersoftiktok #edtech #AI"
- },
- "id": "RL-03"
+ }
 }

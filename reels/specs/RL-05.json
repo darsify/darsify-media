@@ -5,216 +5,129 @@
  "key": 0,
  "mood": "chill",
  "seed": 55,
- "cover": 1.6,
+ "cover": 3.4,
  "scenes": [
   {
-   "type": "hook",
-   "d": 2.6,
+   "type": "story",
+   "d": 11.8,
+   "open": "class",
+   "boardtitle": "Roll call",
+   "lines": [
+    {
+     "who": "ustaz",
+     "t": 0.4,
+     "text": "Good evening, class. Roll call!",
+     "ex": "happy"
+    },
+    {
+     "who": "dars",
+     "t": 2.6,
+     "text": "Dars, here! I celebrate every finished mock.",
+     "ex": "celebrate"
+    },
+    {
+     "who": "dara",
+     "t": 5.3,
+     "text": "Dara! My reading streak is 41 days.",
+     "ex": "proud",
+     "react": {
+      "dars": "surprised"
+     }
+    },
+    {
+     "who": "ustaz",
+     "t": 8.0,
+     "text": "And I'm Ustaz. I send the reminders.",
+     "ex": "proud"
+    },
+    {
+     "who": "dara",
+     "t": 10.0,
+     "text": "So nobody forgets!",
+     "ex": "celebrate",
+     "shot": "students",
+     "react": {
+      "dars": "celebrate"
+     }
+    }
+   ],
+   "board": [
+    {
+     "t": 3.1,
+     "write": "Dars  ·  here",
+     "y": 110
+    },
+    {
+     "t": 5.8,
+     "write": "Dara  ·  here",
+     "y": 200
+    },
+    {
+     "t": 8.5,
+     "write": "Ustaz  ·  teacher",
+     "y": 290,
+     "c": "#ff9a6e"
+    }
+   ],
+   "cast": {
+    "dars": {
+     "jump": [
+      2.9,
+      10.3
+     ]
+    },
+    "dara": {
+     "jump": [
+      10.2
+     ]
+    }
+   }
+  },
+  {
+   "type": "ring",
+   "d": 5.8,
+   "tin": "dolly",
    "head": [
     "Meet the",
     "*Darsify crew.*"
    ],
-   "size": 150,
-   "y": 420,
-   "mascots": [
+   "size": 110,
+   "y": 270,
+   "ry": 760,
+   "r": 420,
+   "steps": [
+    [
+     0,
+     0
+    ],
+    [
+     1.7,
+     1
+    ],
+    [
+     3.4,
+     2
+    ]
+   ],
+   "drift": 5,
+   "tiles": [
     {
-     "who": "dars",
-     "ex": [
-      [
-       0,
-       "happy"
-      ]
-     ],
-     "x": 130,
-     "y": 1130,
-     "w": 270,
-     "t": 0.5
+     "title": "Ustaz",
+     "desc": "The tutor. Announcements, feedback and reminders.",
+     "mascot": "ustaz-proud",
+     "bg": "#2655a3"
     },
     {
-     "who": "ustaz",
-     "ex": [
-      [
-       0,
-       "proud"
-      ]
-     ],
-     "x": 400,
-     "y": 1100,
-     "w": 300,
-     "t": 0.6
+     "title": "Dars",
+     "desc": "The study buddy. Celebrates every finished mock.",
+     "mascot": "dars-celebrate",
+     "bg": "#12305c"
     },
     {
-     "who": "dara",
-     "ex": [
-      [
-       0,
-       "happy"
-      ]
-     ],
-     "x": 690,
-     "y": 1130,
-     "w": 270,
-     "t": 0.7,
-     "ph": 2
-    }
-   ]
-  },
-  {
-   "type": "hook",
-   "d": 2.9,
-   "kicker": "The tutor",
-   "head": [
-    "*Ustaz*"
-   ],
-   "size": 200,
-   "y": 380,
-   "sub": "Announcements, feedback and reminders. The voice of the teacher.",
-   "subt": 0.6,
-   "suby": 600,
-   "mascots": [
-    {
-     "who": "ustaz",
-     "ex": [
-      [
-       0,
-       "happy"
-      ],
-      [
-       1.4,
-       "proud"
-      ]
-     ],
-     "x": 330,
-     "y": 930,
-     "w": 420,
-     "t": 0.3
-    }
-   ]
-  },
-  {
-   "type": "hook",
-   "d": 2.9,
-   "kicker": "The student",
-   "head": [
-    "*Dars*"
-   ],
-   "size": 200,
-   "y": 380,
-   "sub": "Your study buddy. Celebrates every finished mock.",
-   "subt": 0.6,
-   "suby": 600,
-   "mascots": [
-    {
-     "who": "dars",
-     "ex": [
-      [
-       0,
-       "happy"
-      ],
-      [
-       1.4,
-       "celebrate"
-      ]
-     ],
-     "x": 330,
-     "y": 960,
-     "w": 400,
-     "t": 0.3,
-     "jump": [
-      1.4
-     ]
-    }
-   ]
-  },
-  {
-   "type": "hook",
-   "d": 2.9,
-   "kicker": "The student",
-   "head": [
-    "*Dara*"
-   ],
-   "size": 200,
-   "y": 380,
-   "accent": "#e0567f",
-   "sub": "Keeps the streak alive with daily reading and vocab.",
-   "subt": 0.6,
-   "suby": 600,
-   "mascots": [
-    {
-     "who": "dara",
-     "ex": [
-      [
-       0,
-       "reading"
-      ],
-      [
-       1.4,
-       "proud"
-      ]
-     ],
-     "x": 330,
-     "y": 960,
-     "w": 400,
-     "t": 0.3
-    }
-   ]
-  },
-  {
-   "type": "hook",
-   "d": 2.6,
-   "head": [
-    "Together, they",
-    "keep students",
-    "*on track.*"
-   ],
-   "size": 130,
-   "y": 420,
-   "mascots": [
-    {
-     "who": "dars",
-     "ex": [
-      [
-       0,
-       "happy"
-      ]
-     ],
-     "x": 130,
-     "y": 1150,
-     "w": 270,
-     "t": 0.2,
-     "jump": [
-      0.8
-     ]
-    },
-    {
-     "who": "ustaz",
-     "ex": [
-      [
-       0,
-       "proud"
-      ]
-     ],
-     "x": 400,
-     "y": 1120,
-     "w": 300,
-     "t": 0.30000000000000004
-    },
-    {
-     "who": "dara",
-     "ex": [
-      [
-       0,
-       "happy"
-      ]
-     ],
-     "x": 690,
-     "y": 1150,
-     "w": 270,
-     "t": 0.4,
-     "ph": 2,
-     "jump": [
-      1.1
-     ]
+     "title": "Dara",
+     "desc": "Keeps the streak alive with daily reading and vocab.",
+     "mascot": "dara-happy",
+     "bg": "#e0567f"
     }
    ]
   },
@@ -231,10 +144,10 @@
    ]
   }
  ],
+ "id": "RL-05",
  "caption": {
   "ig": "Meet the Darsify crew.\n\nUstaz, the voice of the teacher: announcements, feedback and reminders.\nDars, the study buddy who celebrates every finished mock.\nDara, who keeps the streak alive with daily reading and vocab.\n\nWho's your favourite? Tell us below.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify #students #tutors",
   "fb": "قابلوا فريق Darsify:\nأستاذ: صوت المدرس، الإعلانات والملاحظات والتذكيرات.\nدارس: رفيق المذاكرة اللي بيحتفل بكل امتحان تجريبي.\nدارة: بتحافظ على الاستمرارية بالقراءة اليومية والمفردات.\nمين المفضل عندك؟\n\n—\n\nMeet the Darsify crew: Ustaz, Dars and Dara.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
   "tiktok": "Meet the Darsify crew: Ustaz, Dars and Dara. Who's your favourite? #WeplanYouteach #Darsify #students #studytok #edtech"
- },
- "id": "RL-05"
+ }
 }

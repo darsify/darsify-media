@@ -102,6 +102,17 @@ def sparkle():
     return o
 def msg_tone(): return bloop(900, 1500, .1) * .8 + np.pad(bloop(1300, 1900, .08), (int(.07 * SR), 0))[:int(.1 * SR)]
 
+def babble(who, d):
+    base = [150, 260, 340][who]; o = np.zeros(int(d * SR)); tt = 0.0
+    while tt < d - .06:
+        sd = rng.uniform(.06, .11); n = int(sd * SR); t = T(n); f0 = base * rng.choice([1, 1.12, 1.26, .9, 1.5]) * (1 + .15 * np.sin(np.linspace(0, np.pi, n)))
+        ph = 2 * np.pi * np.cumsum(f0) / SR
+        x = (np.sin(ph) + .5 * np.sin(2 * ph) + .25 * np.sin(3 * ph)) * np.sin(np.linspace(0, np.pi, n)) ** 1.5
+        i = int(tt * SR); o[i:i + n] += x[:len(o) - i]; tt += sd + rng.uniform(0, .035)
+    return lpf(o, 2400 if who else 1500)
+def chalk(d):
+    n = int(d * SR); x = bpf(rng.standard_normal(n), 2500, 8000); env = (np.abs(np.sin(np.linspace(0, d * 9 * np.pi, n))) ** 3) * .9 + .1
+    return x * env * np.sin(np.linspace(0, np.pi, n)) ** .3
 for ev in meta['events']:
     t, k = ev['t'], ev['k']; pan = float(rng.uniform(-.4, .4))
     if k == 'word': place(sfx, t, pop(600 + rng.integers(0, 400)), .14, pan)
@@ -129,6 +140,10 @@ for ev in meta['events']:
     elif k == 'thump': place(sfx, t, thump(), .45, pan); place(sfx, t, swish(.12, 2000, 6000), .1)
     elif k == 'sparkle': place(sfx, t, sparkle(), .42)
     elif k == 'cut': place(sfx, t - .08, swish(.2, 600, 4000), .26); place(sfx, t, thump(), .3)
+    elif k == 'talk': place(sfx, t, babble(int(ev.get('who', 1)), max(.15, ev['t1'] - t)), .32, [-.15, -.3, .3][int(ev.get('who', 1))])
+    elif k == 'chalk': place(sfx, t, chalk(max(.2, ev['t1'] - t)), .16, -.2)
+    elif k == 'cam': place(sfx, t, swish(.55, 250, 2500), .14)
+    elif k == 'whip': place(sfx, t - .25, swish(.4, 500, 7000), .5); place(sfx, t, thump(), .25)
     elif k == 'wipe': place(sfx, t, swish(.6, 300, 6000), .6)
 mix = mus * .55 + sfx * .9
 mix = np.tanh(mix * 1.2) / np.tanh(1.2); mix /= np.abs(mix).max() * 1.05

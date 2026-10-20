@@ -1,41 +1,61 @@
 {
  "title": "The real exam, before the real exam",
  "family": "blue",
- "bpm": 126,
+ "bpm": 124,
  "key": -3,
  "mood": "drive",
  "seed": 66,
- "cover": 1.5,
+ "cover": 8.6,
  "scenes": [
   {
-   "type": "hook",
-   "d": 2.8,
-   "head": [
-    "The real exam.",
-    "*Before* the",
-    "real exam."
-   ],
-   "size": 140,
-   "y": 420,
-   "mascots": [
+   "type": "story",
+   "d": 6.2,
+   "open": "class",
+   "boardtitle": "Mock 3",
+   "lines": [
+    {
+     "who": "dara",
+     "t": 0.4,
+     "text": "Sir, is the real SAT this hard?",
+     "ex": "concerned"
+    },
+    {
+     "who": "ustaz",
+     "t": 2.5,
+     "text": "Let's find out. Mock 3, timed.",
+     "ex": "focus",
+     "shot": "boardwide"
+    },
     {
      "who": "dars",
-     "ex": [
-      [
-       0,
-       "focus"
-      ]
-     ],
-     "x": 400,
-     "y": 1180,
-     "w": 300,
-     "t": 0.4
+     "t": 4.7,
+     "text": "Now?!",
+     "ex": "surprised",
+     "react": {
+      "dara": "surprised"
+     }
+    }
+   ],
+   "board": [
+    {
+     "t": 3.0,
+     "write": "SAT MATH  ·  35 MIN",
+     "y": 120,
+     "size": 46
+    },
+    {
+     "t": 3.7,
+     "write": "Mock 3",
+     "y": 200,
+     "size": 90,
+     "c": "#ff9a6e"
     }
    ]
   },
   {
    "type": "exam",
-   "d": 5.6,
+   "d": 6.4,
+   "tin": "dolly",
    "tabs": [
     "SAT",
     "EST",
@@ -55,10 +75,10 @@
     "4"
    ],
    "pick": 2,
-   "pick_at": 2.6,
-   "next_at": 3.4,
-   "c0": 0.4,
-   "c1": 5.4,
+   "pick_at": 3.0,
+   "next_at": 3.8,
+   "c0": 0.2,
+   "c1": 6.2,
    "tfrom": 1908,
    "tto": 1902,
    "head": [
@@ -66,29 +86,58 @@
    ],
    "size": 96,
    "y": 280,
-   "mascots": [
-    {
-     "who": "dars",
-     "ex": [
-      [
-       0,
-       "thinking"
-      ],
-      [
-       2.6,
-       "happy"
-      ]
-     ],
-     "x": 760,
-     "y": 1450,
-     "w": 220,
-     "t": 0.3
-    }
+   "cam": [
+    [
+     0,
+     540,
+     1000,
+     0.8,
+     -24,
+     16,
+     0.01
+    ],
+    [
+     0.15,
+     540,
+     980,
+     1,
+     0,
+     0,
+     1.4
+    ],
+    [
+     1.9,
+     470,
+     1080,
+     1.3,
+     7,
+     4,
+     0.8
+    ],
+    [
+     3.9,
+     760,
+     700,
+     1.45,
+     -6,
+     2,
+     0.6
+    ],
+    [
+     5.0,
+     540,
+     960,
+     1,
+     0,
+     0,
+     0.8
+    ]
    ]
   },
   {
    "type": "chips",
    "d": 3.6,
+   "tin": "whip",
    "head": [
     "Same timer.",
     "Same tools.",
@@ -96,6 +145,7 @@
    ],
    "size": 120,
    "y": 300,
+   "drift": 6,
    "chips": [
     {
      "text": "Mark for review",
@@ -133,6 +183,7 @@
   {
    "type": "hook",
    "d": 2.8,
+   "tin": "flip",
    "head": [
     "So exam day",
     "*feels familiar.*"
@@ -144,7 +195,7 @@
    "suby": 760,
    "mascots": [
     {
-     "who": "dars",
+     "who": "dara",
      "ex": [
       [
        0,
@@ -174,10 +225,10 @@
    ]
   }
  ],
+ "id": "RL-06",
  "caption": {
   "ig": "The real exam, before the real exam.\n\nDarsify mocks look and feel like the real thing: the timer, mark for review, the answer eliminator, the question navigator.\n\nSAT, EST, ACT, IGCSE and Thanwya Amma. Auto-graded, with weak topics after every paper.\n\nSo exam day feels familiar.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #IGCSE #Thanwya",
   "fb": "الامتحان الحقيقي… قبل الامتحان الحقيقي.\nامتحانات Darsify التجريبية بنفس شكل الامتحان: التايمر، المراجعة، استبعاد الإجابات، والتنقل بين الأسئلة. SAT وEST وACT وIGCSE والثانوية العامة.\nعلشان يوم الامتحان يبقى مألوف.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nAuthentic mocks for SAT, EST, ACT, IGCSE and Thanwya Amma.\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #Thanwya",
   "tiktok": "The real exam, before the real exam. Mocks that feel like exam day. #WeplanYouteach #SAT #IGCSE #Thanwya #studytok"
- },
- "id": "RL-06"
+ }
 }

@@ -5,7 +5,7 @@
  "key": 9,
  "mood": "drive",
  "seed": 99,
- "cover": 1.5,
+ "cover": 7.6,
  "scenes": [
   {
    "type": "hook",
@@ -22,7 +22,7 @@
    "suby": 760,
    "mascots": [
     {
-     "who": "dars",
+     "who": "dara",
      "ex": [
       [
        0,
@@ -34,87 +34,139 @@
      "w": 300,
      "t": 0.4
     }
+   ],
+   "cam": [
+    [
+     0,
+     540,
+     960,
+     1,
+     0,
+     0,
+     0.01
+    ],
+    [
+     0,
+     540,
+     900,
+     1.1,
+     0,
+     0,
+     2.6
+    ]
    ]
   },
   {
-   "type": "ui",
-   "d": 5.8,
-   "head": [
-    "Omar's last",
-    "4 mocks"
-   ],
-   "size": 100,
-   "y": 280,
-   "py": 560,
-   "panel": {
-    "crumb": "Insights  /  Weak points",
-    "title": "Omar K.",
-    "sub": "Correct answers per topic, last 4 mocks",
-    "blocks": [
-     {
-      "bar": {
-       "l": "Data analysis",
-       "w": 88,
-       "v": "88%",
-       "at": 0.5
-      }
-     },
-     {
-      "bar": {
-       "l": "Geometry",
-       "w": 72,
-       "v": "72%",
-       "at": 0.9
-      }
-     },
-     {
-      "bar": {
-       "l": "Ratios",
-       "w": 63,
-       "v": "63%",
-       "at": 1.3
-      }
-     },
-     {
-      "bar": {
-       "l": "Linear equations",
-       "w": 41,
-       "v": "41%",
-       "at": 1.7,
-       "c": "#f26229"
-      }
-     }
-    ],
-    "stamp": {
-     "text": "Weak topic",
-     "t": 3.2,
-     "x": 380,
-     "y": 520
-    }
-   },
-   "mascots": [
+   "type": "story",
+   "d": 11.6,
+   "tin": "whip",
+   "open": "class",
+   "boardtitle": "Dara · last 4 mocks",
+   "lines": [
+    {
+     "who": "dara",
+     "t": 0.3,
+     "text": "Sir, why do I keep losing marks?",
+     "ex": "sulk"
+    },
+    {
+     "who": "ustaz",
+     "t": 2.5,
+     "text": "Let's ask your last 4 mocks.",
+     "ex": "thinking",
+     "shot": "boardwide"
+    },
     {
      "who": "dars",
-     "ex": [
-      [
-       0,
-       "focus"
-      ],
-      [
-       3.2,
-       "surprised"
-      ]
-     ],
-     "x": 740,
-     "y": 1440,
-     "w": 230,
-     "t": 0.3
+     "t": 6.4,
+     "text": "It's linear equations!",
+     "ex": "surprised",
+     "react": {
+      "dara": "surprised"
+     }
+    },
+    {
+     "who": "ustaz",
+     "t": 8.3,
+     "text": "Practice on it is already in your portal.",
+     "ex": "proud"
+    },
+    {
+     "who": "dara",
+     "t": 10.3,
+     "text": "Let's go!",
+     "ex": "celebrate",
+     "react": {
+      "dars": "happy"
+     }
     }
-   ]
+   ],
+   "board": [
+    {
+     "t": 3.0,
+     "panel": {
+      "crumb": "Insights  /  Weak points",
+      "title": "Correct answers per topic",
+      "blocks": [
+       {
+        "bar": {
+         "l": "Data analysis",
+         "w": 88,
+         "v": "88%",
+         "at": 3.5
+        }
+       },
+       {
+        "bar": {
+         "l": "Geometry",
+         "w": 72,
+         "v": "72%",
+         "at": 3.8
+        }
+       },
+       {
+        "bar": {
+         "l": "Ratios",
+         "w": 63,
+         "v": "63%",
+         "at": 4.1
+        }
+       },
+       {
+        "bar": {
+         "l": "Linear equations",
+         "w": 41,
+         "v": "41%",
+         "at": 4.4,
+         "c": "#f26229"
+        }
+       }
+      ]
+     },
+     "x": 20,
+     "y": 75,
+     "scale": 0.66
+    },
+    {
+     "t": 5.6,
+     "stamp": "Weak topic",
+     "x": 170,
+     "y": 465,
+     "size": 46
+    }
+   ],
+   "cast": {
+    "dara": {
+     "jump": [
+      10.6
+     ]
+    }
+   }
   },
   {
    "type": "hook",
    "d": 2.8,
+   "tin": "whip",
    "head": [
     "Darsify finds it",
     "*after every mock.*"
@@ -126,11 +178,11 @@
    "suby": 760,
    "mascots": [
     {
-     "who": "dars",
+     "who": "ustaz",
      "ex": [
       [
        0,
-       "happy"
+       "proud"
       ]
      ],
      "x": 400,
@@ -153,10 +205,10 @@
    ]
   }
  ],
+ "id": "RL-09",
  "caption": {
   "ig": "Quiz: which topic is costing Omar the most marks?\n\nComment your guess.\n\nDarsify tags every question by topic, so after each mock you see exactly where the marks went, and practice on that topic goes out automatically.\n\nNo more guessing who needs help with what.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #tutors #teachers",
   "fb": "خمّن: أنهي موضوع بيضيّع على عمر أكتر درجات؟ اكتب إجابتك في الكومنتات.\nDarsify بيصنّف كل سؤال حسب الموضوع، فبعد كل امتحان تجريبي تعرف الدرجات راحت فين، والتدريب على الموضوع ده بيوصل للطالب لوحده.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nGuess the weak topic. Darsify finds it after every mock.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
   "tiktok": "Guess the weak topic before the end. Comment your answer. #WeplanYouteach #SAT #teachersoftiktok #studytok #tutor"
- },
- "id": "RL-09"
+ }
 }
