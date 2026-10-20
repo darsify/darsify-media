@@ -28,7 +28,7 @@ R['RL-02'] = dict(title='POV: a parent messages you at 11:47 PM', family='orange
   END(['Attendance', 'Mocks', 'Homework', 'Weak topics', 'Reports', 'WhatsApp'])],
   caption=dict(
     ig="POV: it's 11:47 PM and a parent wants a full update.\n\nAttendance. Mock score. Homework. Right now.\n\nWith Darsify, every parent gets their child's week on WhatsApp, every Sunday, without you writing a single message.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #tutors #teachers #parents",
-    fb="الساعة ١١:٤٧ بالليل… وولي أمر عايز تقرير كامل عن ابنه.\nمع Darsify، كل ولي أمر بيوصله تقرير أسبوعي على واتساب كل حد، من غير ما تكتب رسالة واحدة.\n\nدرّس أكتر. لاحق أقل. انضم لينا على darsify.net\n\n—\n\nPOV: it's 11:47 PM and a parent wants a full update. With Darsify, every parent gets their child's week on WhatsApp, automatically.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    fb="الساعة ١١:٤٧ بالليل… وولي أمر عايز تقرير كامل عن ابنه.\nمع Darsify، كل ولي أمر بيوصله تقرير أسبوعي على واتساب كل حد، من غير ما تكتب رسالة واحدة.\n\nTeach more. Chase less. انضم لينا على darsify.net\n\n—\n\nPOV: it's 11:47 PM and a parent wants a full update. With Darsify, every parent gets their child's week on WhatsApp, automatically.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="POV: 11:47 PM and a parent wants a full update. Darsify sends it every Sunday on WhatsApp. #WeplanYouteach #TeachMoreChaseLess #teachersoftiktok #tutor #parents"))
 
 R['RL-03'] = dict(title='AI marks. You approve.', family='blue', bpm=120, key=5, mood='drive', seed=33, cover=1.4, scenes=[
@@ -47,7 +47,7 @@ R['RL-03'] = dict(title='AI marks. You approve.', family='blue', bpm=120, key=5,
   END(['Essays', 'Rubrics', 'Feedback', 'Grades', 'Approve', 'Send'])],
   caption=dict(
     ig="30 essays. One evening.\n\nDarsify reads every written answer against your rubric and suggests a grade with the reasons.\n\nYou check it, adjust it, approve it. Nothing reaches a student until you say so.\n\nAI suggests. You approve.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #teachers #tutors #edtech",
-    fb="٣٠ مقال في ليلة واحدة؟\nDarsify بيصحح كل إجابة مكتوبة حسب معاييرك ويقترح الدرجة بالأسباب، وإنت اللي بتعتمد. مفيش درجة بتوصل للطالب غير لما توافق.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\n30 essays, one evening. Darsify suggests a grade against your rubric; you approve it.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    fb="٣٠ مقال في ليلة واحدة؟\nDarsify بيصحح كل إجابة مكتوبة حسب معاييرك ويقترح الدرجة بالأسباب، وإنت اللي بتعتمد. مفيش درجة بتوصل للطالب غير لما توافق.\n\nTeach more. Chase less. darsify.net\n\n—\n\n30 essays, one evening. Darsify suggests a grade against your rubric; you approve it.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="30 essays, one evening. AI suggests the grade, you approve it. #WeplanYouteach #TeachMoreChaseLess #teachersoftiktok #edtech #AI"))
 
 R['RL-04'] = dict(title='3 automations every tutor needs', family='orange', bpm=124, key=7, mood='bright', seed=44, cover=1.5, scenes=[
@@ -62,7 +62,7 @@ R['RL-04'] = dict(title='3 automations every tutor needs', family='orange', bpm=
   END(['Links', 'Reminders', 'Reports', 'Payments', 'Attendance', 'Mocks'])],
   caption=dict(
     ig="3 automations every tutor needs (save this):\n\n1. The class link goes out automatically once a student pays.\n2. Reminders go out before every class.\n3. Every parent gets a weekly report on WhatsApp.\n\nSet them once in Darsify. They run every week.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #tutors #teachers #productivity",
-    fb="٣ حاجات أي مدرس محتاجها تشتغل لوحدها:\n١. اللينك يوصل للطالب أول ما يدفع\n٢. تذكير قبل كل حصة\n٣. تقرير أسبوعي لكل ولي أمر على واتساب\nتظبطها مرة واحدة على Darsify وهي تشتغل كل أسبوع.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\n3 automations every tutor needs: link after payment, reminders before class, weekly parent reports.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    fb="٣ حاجات أي مدرس محتاجها تشتغل لوحدها:\n١. اللينك يوصل للطالب أول ما يدفع\n٢. تذكير قبل كل حصة\n٣. تقرير أسبوعي لكل ولي أمر على واتساب\nتظبطها مرة واحدة على Darsify وهي تشتغل كل أسبوع.\n\nTeach more. Chase less. darsify.net\n\n—\n\n3 automations every tutor needs: link after payment, reminders before class, weekly parent reports.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="3 automations every tutor needs. Save this. #WeplanYouteach #TeachMoreChaseLess #teachersoftiktok #tutor #productivity"))
 
 R['RL-05'] = dict(title='Meet the Darsify crew', family='ink', bpm=110, key=0, mood='chill', seed=55, cover=1.6, scenes=[
@@ -95,7 +95,7 @@ R['RL-06'] = dict(title='The real exam, before the real exam', family='blue', bp
   END(['SAT', 'EST', 'ACT', 'IGCSE', 'Thanwya Amma', 'Mocks'])],
   caption=dict(
     ig="The real exam, before the real exam.\n\nDarsify mocks look and feel like the real thing: the timer, mark for review, the answer eliminator, the question navigator.\n\nSAT, EST, ACT, IGCSE and Thanwya Amma. Auto-graded, with weak topics after every paper.\n\nSo exam day feels familiar.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #IGCSE #Thanwya",
-    fb="الامتحان الحقيقي… قبل الامتحان الحقيقي.\nامتحانات Darsify التجريبية بنفس شكل الامتحان: التايمر، المراجعة، استبعاد الإجابات، والتنقل بين الأسئلة. SAT وEST وACT وIGCSE والثانوية العامة.\nعلشان يوم الامتحان يبقى مألوف.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nAuthentic mocks for SAT, EST, ACT, IGCSE and Thanwya Amma.\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #Thanwya",
+    fb="الامتحان الحقيقي… قبل الامتحان الحقيقي.\nامتحانات Darsify التجريبية بنفس شكل الامتحان: التايمر، المراجعة، استبعاد الإجابات، والتنقل بين الأسئلة. SAT وEST وACT وIGCSE والثانوية العامة.\nعلشان يوم الامتحان يبقى مألوف.\n\nTeach more. Chase less. darsify.net\n\n—\n\nAuthentic mocks for SAT, EST, ACT, IGCSE and Thanwya Amma.\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #Thanwya",
     tiktok="The real exam, before the real exam. Mocks that feel like exam day. #WeplanYouteach #SAT #IGCSE #Thanwya #studytok"))
 
 R['RL-07'] = dict(title='Your center. Now online too.', family='orange', bpm=118, key=4, mood='warm', seed=77, cover=1.5, scenes=[
@@ -148,8 +148,8 @@ R['RL-09'] = dict(title='Guess the weak topic', family='orange', bpm=116, key=9,
        mascots=[M('dars', [[0, 'happy']], 400, 1160, 300, .2)]),
   END(['Ratios', 'Geometry', 'Algebra', 'Data', 'Practice', 'Mocks'])],
   caption=dict(
-    ig="Quiz: which topic is costing Omar the most marks?\n\nComment your guess.\n\nDarsify tags every question by topic, so after each mock you see exactly where the marks went, and practice on that topic goes out automatically.\n\nNo more guessing who needs help with what.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #tutors #teachers",
-    fb="خمّن: أنهي موضوع بيضيّع على عمر أكتر درجات؟ اكتب إجابتك في الكومنتات.\nDarsify بيصنّف كل سؤال حسب الموضوع، فبعد كل امتحان تجريبي تعرف الدرجات راحت فين، والتدريب على الموضوع ده بيوصل للطالب لوحده.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nGuess the weak topic. Darsify finds it after every mock.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    ig="Quiz: which topic keeps costing Dara marks?\n\nComment your guess.\n\nDarsify tags every question by topic, so after each mock you see exactly where the marks went, and practice on that topic goes out automatically.\n\nNo more guessing who needs help with what.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #SAT #tutors #teachers",
+    fb="خمّن: أنهي موضوع بيضيّع على دارة أكتر درجات؟ اكتب إجابتك في الكومنتات.\nDarsify بيصنّف كل سؤال حسب الموضوع، فبعد كل امتحان تجريبي تعرف الدرجات راحت فين، والتدريب على الموضوع ده بيوصل للطالب لوحده.\n\nTeach more. Chase less. darsify.net\n\n—\n\nGuess the weak topic. Darsify finds it after every mock.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="Guess the weak topic before the end. Comment your answer. #WeplanYouteach #SAT #teachersoftiktok #studytok #tutor"))
 
 R['RL-10'] = dict(title='How many WhatsApp groups do you manage?', family='blue', bpm=124, key=5, mood='bright', seed=101, cover=1.4, scenes=[
@@ -165,7 +165,7 @@ R['RL-10'] = dict(title='How many WhatsApp groups do you manage?', family='blue'
   END(['Links', 'Files', 'Reminders', 'Announcements', 'Mocks', 'Reports'])],
   caption=dict(
     ig="How many WhatsApp groups do you manage right now? Be honest.\n\n\"Is class today?\" \"Sir, the link?\" \"Can you resend it?\"\n\nDarsify gives your students one portal: the links, the files, the reminders and the announcements, all in one place.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #teachers #tutors #teacherlife",
-    fb="عندك كام جروب واتساب دلوقتي؟ قول الحقيقة.\n\"الحصة النهارده؟\" \"اللينك يا مستر؟\" \"ممكن تبعته تاني؟\"\nمع Darsify الطلبة عندهم بوابة واحدة فيها اللينكات والملفات والتذكيرات والإعلانات.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nHow many WhatsApp groups do you manage? Darsify puts it all in one portal.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    fb="عندك كام جروب واتساب دلوقتي؟ قول الحقيقة.\n\"الحصة النهارده؟\" \"اللينك يا مستر؟\" \"ممكن تبعته تاني؟\"\nمع Darsify الطلبة عندهم بوابة واحدة فيها اللينكات والملفات والتذكيرات والإعلانات.\n\nTeach more. Chase less. darsify.net\n\n—\n\nHow many WhatsApp groups do you manage? Darsify puts it all in one portal.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="How many WhatsApp groups do you manage? Be honest. #WeplanYouteach #teachersoftiktok #teacherlife #tutor #TeachMoreChaseLess"))
 
 R['RL-11'] = dict(title='لسه بتلاحق الفلوس؟', lang='ar', family='orange', bpm=114, key=0, mood='warm', seed=111, cover=1.5, scenes=[
@@ -178,11 +178,11 @@ R['RL-11'] = dict(title='لسه بتلاحق الفلوس؟', lang='ar', family=
   dict(type='split', d=5.6, head=['قبل وبعد'], size=120, y=280, ly=520,
        left=dict(title='قبل', t=.3, items=[dict(text='تفتح الشات', t=.6, strike=3.6), dict(text='تدور على السكرين', t=1.0, strike=3.8), dict(text='تأكد التحويل', t=1.4, strike=4.0), dict(text='تبعت اللينك', t=1.8, strike=4.2)]),
        right=dict(title='Darsify مع', t=2.2, items=[dict(text='الطالب بيدفع', t=2.5), dict(text='الدفع بيتأكد', t=2.9), dict(text='اللينك بيوصل لوحده', t=3.3)])),
-  dict(type='hook', d=2.6, head=['درّس أكتر.', '*لاحق أقل.*'], size=170, y=480, mascots=trio()),
+  dict(type='hook', d=2.6, en=True, head=['Teach more.', '*Chase less.*'], size=160, y=480, mascots=trio()),
   END(['الدفع', 'اللينك', 'التذكير', 'الحضور', 'التقارير', 'الامتحانات'])],
   caption=dict(
-    ig="لسه بتلاحق الفلوس قبل كل حصة؟\n\nتفتح الشات، تدور على السكرين، تأكد التحويل، تبعت اللينك… وتكرر.\n\nمع Darsify الطالب بيدفع بالكارت أو المحفظة أو إنستاباي، الدفع بيتأكد، واللينك بيوصل لوحده.\n\nدرّس أكتر. لاحق أقل. انضم لينا على darsify.net (اللينك في البايو)\n\n#WeplanYouteach #TeachMoreChaseLess #Thanwya #tutors #مدرسين",
-    fb="لسه بتلاحق الفلوس قبل كل حصة؟\nتفتح الشات، تدور على السكرين، تأكد التحويل، تبعت اللينك… وتكرر.\nمع Darsify الطالب بيدفع بالكارت أو المحفظة أو إنستاباي، الدفع بيتأكد، واللينك بيوصل لوحده.\n\nدرّس أكتر. لاحق أقل. انضم لينا على darsify.net\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    ig="لسه بتلاحق الفلوس قبل كل حصة؟\n\nتفتح الشات، تدور على السكرين، تأكد التحويل، تبعت اللينك… وتكرر.\n\nمع Darsify الطالب بيدفع بالكارت أو المحفظة أو إنستاباي، الدفع بيتأكد، واللينك بيوصل لوحده.\n\nTeach more. Chase less. انضم لينا على darsify.net (اللينك في البايو)\n\n#WeplanYouteach #TeachMoreChaseLess #Thanwya #tutors #مدرسين",
+    fb="لسه بتلاحق الفلوس قبل كل حصة؟\nتفتح الشات، تدور على السكرين، تأكد التحويل، تبعت اللينك… وتكرر.\nمع Darsify الطالب بيدفع بالكارت أو المحفظة أو إنستاباي، الدفع بيتأكد، واللينك بيوصل لوحده.\n\nTeach more. Chase less. انضم لينا على darsify.net\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="لسه بتلاحق الفلوس قبل كل حصة؟ Darsify بيأكد الدفع ويبعت اللينك لوحده. #WeplanYouteach #مدرسين #ثانوية_عامة #TeachMoreChaseLess"))
 
 R['RL-12'] = dict(title='Mistakes come back as practice', family='blue', bpm=112, key=7, mood='chill', seed=121, cover=1.5, scenes=[
@@ -202,7 +202,7 @@ R['RL-12'] = dict(title='Mistakes come back as practice', family='blue', bpm=112
   END(['Mistakes', 'Reviews', 'Practice', 'Streaks', 'Mocks', 'Progress'])],
   caption=dict(
     ig="Students forget their mistakes. Darsify doesn't.\n\nEvery wrong answer on a mock comes back as a review: on day 3, day 7, and again until it's locked in.\n\nAutomatically, for every student in every group.\n\nTeach more. Chase less. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #students #tutors #studytips",
-    fb="الطلبة بينسوا غلطاتهم… Darsify لأ.\nكل إجابة غلط في الامتحان التجريبي بترجع للطالب كمراجعة: بعد ٣ أيام، وبعد أسبوع، لحد ما يتقنها. لوحدها، لكل طالب.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nEvery mistake comes back as practice until it's locked in.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    fb="الطلبة بينسوا غلطاتهم… Darsify لأ.\nكل إجابة غلط في الامتحان التجريبي بترجع للطالب كمراجعة: بعد ٣ أيام، وبعد أسبوع، لحد ما يتقنها. لوحدها، لكل طالب.\n\nTeach more. Chase less. darsify.net\n\n—\n\nEvery mistake comes back as practice until it's locked in.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="Students forget their mistakes. Darsify brings them back as practice. #WeplanYouteach #studytok #studytips #tutor #TeachMoreChaseLess"))
 
 R['RL-13'] = dict(title="A tutor's evening, before Darsify", family='orange', bpm=120, key=2, mood='drive', seed=131, cover=1.5, scenes=[
@@ -217,7 +217,7 @@ R['RL-13'] = dict(title="A tutor's evening, before Darsify", family='orange', bp
   END(['Payments', 'Links', 'Attendance', 'Reports', 'Questions', 'Reminders'])],
   caption=dict(
     ig="A tutor's evening, before Darsify:\n\n5:00 PM payment screenshots\n6:00 PM resend the Zoom link\n6:45 PM attendance by hand\n9:00 PM 25 parent updates\n11:47 PM \"one quick question\"\n\nWith Darsify, all of that runs itself. Your evening goes back to teaching. Or resting.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #teacherlife #tutors #teachers",
-    fb="مساء أي مدرس قبل Darsify:\n٥ م سكرينات التحويل\n٦ م تبعت لينك الزووم تاني\n٦:٤٥ م الحضور بإيدك\n٩ م ٢٥ رسالة لأولياء الأمور\n١١:٤٧ م \"سؤال صغير بس\"\nمع Darsify كل ده بيشتغل لوحده.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    fb="مساء أي مدرس قبل Darsify:\n٥ م سكرينات التحويل\n٦ م تبعت لينك الزووم تاني\n٦:٤٥ م الحضور بإيدك\n٩ م ٢٥ رسالة لأولياء الأمور\n١١:٤٧ م \"سؤال صغير بس\"\nمع Darsify كل ده بيشتغل لوحده.\n\nTeach more. Chase less. darsify.net\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="A tutor's evening before Darsify. Which one hits hardest? #WeplanYouteach #teacherlife #teachersoftiktok #tutor #TeachMoreChaseLess"))
 
 R['RL-14'] = dict(title='One engine. Three ways to use it.', family='ink', bpm=118, key=0, mood='bright', seed=141, cover=1.5, scenes=[
@@ -230,7 +230,7 @@ R['RL-14'] = dict(title='One engine. Three ways to use it.', family='ink', bpm=1
   END(['Tutors', 'Academies', 'Schools', 'Universities', 'AI', 'Automation'])],
   caption=dict(
     ig="One engine. Three ways to use it.\n\nDarsify for Tutors: mocks, marking, payments and parent reports.\nDarsify for Academies: all your tutors and students, online and on-ground.\nDarsify for Schools & Universities: from the canteen to the exams, one ecosystem.\n\nAll powered by AI and automation.\n\nTeach more. Chase less. darsify.net (link in bio)\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #AI #education",
-    fb="محرك واحد… ٣ طرق تستخدمه:\nDarsify للمدرسين، للأكاديميات والسنترات، وللمدارس والجامعات. وكله شغال بالـ AI والأتمتة.\n\nدرّس أكتر. لاحق أقل. darsify.net\n\n—\n\nOne engine, three ways: tutors, academies, schools & universities.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    fb="محرك واحد… ٣ طرق تستخدمه:\nDarsify للمدرسين، للأكاديميات والسنترات، وللمدارس والجامعات. وكله شغال بالـ AI والأتمتة.\n\nTeach more. Chase less. darsify.net\n\n—\n\nOne engine, three ways: tutors, academies, schools & universities.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="One engine, three ways: tutors, academies, schools and universities. #WeplanYouteach #edtech #AI #education #TeachMoreChaseLess"))
 
 for k, v in R.items():

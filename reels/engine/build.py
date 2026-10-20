@@ -47,16 +47,22 @@ class B:
 
 def esc(x): return H.escape(str(x))
 def acc_words(text, accent):
-    """split a line into word spans; *word* -> accent colour"""
-    out = []
+    """split a line into word spans; *word* or *several words* -> accent colour"""
+    out = []; on = False
     for w in text.split(' '):
-        a = w.startswith('*') and w.endswith('*') and len(w) > 1
-        w2 = w.strip('*')
-        out.append((w2, a))
+        st = w.startswith('*'); en = w.endswith('*') and len(w) > 1
+        if st: on = True
+        out.append((w.strip('*'), on))
+        if en: on = False
     return out
 
 def head(b, lines, t0=.15, y=300, size=150, step=.1, color=WHITE, accent=None, align='start', a='up', sound=True, maxw=920, weight=800, lh=1.0):
     accent = accent or b.spec['_accent']
+    ar0 = b.ar
+    if b.sc.get('en'): b.ar = False
+    try: return _head(b, lines, t0, y, size, step, color, accent, align, a, sound, maxw, weight, lh)
+    finally: b.ar = ar0
+def _head(b, lines, t0, y, size, step, color, accent, align, a, sound, maxw, weight, lh):
     fam = 'A' if b.ar else 'M'
     style = f'top:{y}px;left:80px;right:80px;text-align:{"right" if b.ar and align=="start" else align};font-family:{fam};font-weight:{weight};font-size:{size}px;line-height:{lh};color:{color};' + ('' if b.ar else 'text-transform:uppercase;letter-spacing:-.01em;')
     hz = b.sc.get('headz')
@@ -315,9 +321,10 @@ def sc_end(b, sc):
         pos = [[110, 330], [640, 300], [80, 760], [690, 800], [150, 1030], [620, 1060]][i % 6]
         b.add(f'<div class="ec" data-in="{.05+i*.05}" data-a="pop" data-out="{.75+i*.05}" data-outa="shrink" style="left:{pos[0]}px;top:{pos[1]}px;{"font-family:A;" if ar else ""}">{esc(w)}</div>')
     b.add(f'<div class="dcard" data-in="1.0" data-a="pop" style="left:290px;top:420px"><img src="{wm}" style="width:400px"></div>')
-    l1, l2 = (sc.get('l1', 'درّس أكتر.'), sc.get('l2', 'لاحق أقل.')) if ar else (sc.get('l1', 'TEACH MORE.'), sc.get('l2', 'CHASE LESS.'))
+    # brand rule: the slogan is always English, never translated
+    l1, l2 = sc.get('l1', 'TEACH MORE.'), sc.get('l2', 'CHASE LESS.')
     fam = 'A' if ar else 'M'
-    b.add(f'<div class="abs" data-in="1.35" data-a="up" style="left:0;right:0;top:700px;text-align:center;font-family:{fam};font-weight:800;font-size:112px;line-height:1.05;color:{INK}" {"dir=rtl" if ar else ""}>{esc(l1)}<br><span style="color:{ORANGE}">{esc(l2)}</span></div>')
+    b.add(f'<div class="abs" data-in="1.35" data-a="up" style="left:0;right:0;top:700px;text-align:center;font-family:M;font-weight:800;font-size:112px;line-height:1.05;color:{INK}">{esc(l1)}<br><span style="color:{ORANGE}">{esc(l2)}</span></div>')
     join = sc.get('join', 'انضم لينا دلوقتي على <b>Darsify.net</b>' if ar else 'Join us now at <b>Darsify.net</b>')
     b.add(f'<div class="abs" data-in="1.75" data-a="up" style="left:0;right:0;top:960px;text-align:center;font-family:{fam};font-size:50px;color:{INK}" {"dir=rtl" if ar else ""}>{join}</div>')
     b.add(f'<div class="btnJ" data-in="2.0" data-a="pop" style="{"font-family:A;" if ar else ""}">{esc(sc.get("btn","انضم لينا" if ar else "JOIN US"))}</div>')
