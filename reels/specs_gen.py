@@ -112,10 +112,10 @@ R['RL-07'] = dict(title='Your center. Now online too.', family='orange', bpm=118
          dict(bar=dict(l='Attendance', w=92, v='92%', at=1.4)), dict(bar=dict(l='Fees collected', w=87, v='87%', at=1.7, c='#f26229'))]),
        mascots=[M('ustaz', [[0, 'focus'], [2.4, 'proud']], 720, 1440, 250, .3)]),
   dict(type='hook', d=2.6, head=['One academy.', '*One system.*'], size=150, y=480, mascots=trio()),
-  END(['Tutors', 'Students', 'Branches', 'Online', 'On-ground', 'Fees'], btn='BOOK A DEMO', join='Book a demo at <b>Darsify.net</b>')],
+  END(['Tutors', 'Students', 'Branches', 'Online', 'On-ground', 'Fees'])],
   caption=dict(
-    ig="Run a center or an academy? Here's Darsify for Academies.\n\nEvery tutor gets their own Darsify workspace. You see all your students, groups, attendance, results and fees in one account.\n\nAnd your center gets its own online academy, alongside the classes on the ground.\n\nOne academy. One system. Book a demo at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #education #Egypt",
-    fb="عندك سنتر أو أكاديمية؟\nمع Darsify for Academies كل مدرس عنده مساحة شغل خاصة بيه، وإنت شايف كل الطلبة والمجموعات والحضور والنتايج والمصاريف في حساب واحد.\nوالسنتر بتاعك يبقى أكاديمية أونلاين جنب الأونجراوند.\n\nاحجز ديمو على darsify.net\n\n—\n\nDarsify for Academies: every tutor, every student, online and on-ground, in one system.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    ig="Run a center or an academy? Here's Darsify for Academies.\n\nEvery tutor gets their own Darsify workspace. You see all your students, groups, attendance, results and fees in one account.\n\nAnd your center gets its own online academy, alongside the classes on the ground.\n\nOne academy. One system. Join us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #education #Egypt",
+    fb="عندك سنتر أو أكاديمية؟\nمع Darsify for Academies كل مدرس عنده مساحة شغل خاصة بيه، وإنت شايف كل الطلبة والمجموعات والحضور والنتايج والمصاريف في حساب واحد.\nوالسنتر بتاعك يبقى أكاديمية أونلاين جنب الأونجراوند.\n\nانضم لينا على darsify.net\n\n—\n\nDarsify for Academies: every tutor, every student, online and on-ground, in one system.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="Your center. Now online too. Darsify for Academies. #WeplanYouteach #edtech #education #Egypt #tutor"))
 
 R['RL-08'] = dict(title='From the canteen to the exams', family='blue', bpm=122, key=2, mood='bright', seed=88, cover=1.6, scenes=[
@@ -128,11 +128,11 @@ R['RL-08'] = dict(title='From the canteen to the exams', family='blue', bpm=122,
        dict(title='Leadership to classroom', desc='Principal, heads, teachers, students and parents, connected.', icon='building'),
        dict(title='AI does the paperwork', desc='Reports, marking, reminders and records, ready for approval.', icon='ai'),
        dict(title='Parents in the loop', desc='A weekly report per child on WhatsApp.', icon='chat')]),
-  dict(type='hook', d=2.6, head=['Less paper.', '*More learning.*'], size=150, y=480, sub='Book a demo at Darsify.net', subt=.9, suby=820, mascots=trio()),
-  END(['Canteen', 'Grades', 'Fees', 'Exams', 'Bus', 'Reports'], btn='BOOK A DEMO', join='Book a demo at <b>Darsify.net</b>')],
+  dict(type='hook', d=2.6, head=['Less paper.', '*More learning.*'], size=150, y=480, sub='Join us now at Darsify.net', subt=.9, suby=820, mascots=trio()),
+  END(['Canteen', 'Grades', 'Fees', 'Exams', 'Bus', 'Reports'])],
   caption=dict(
-    ig="From the canteen to the exams. Darsify for Schools & Universities.\n\nOne ecosystem that connects leadership, heads of department, teachers, students, parents and student affairs.\n\nAI and automation take the paperwork: reports, marking, reminders and records, ready for staff to approve.\n\nBook a demo at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #schools #universities",
-    fb="من الكانتين لحد الامتحانات.\nDarsify for Schools & Universities: سيستم واحد بيربط الإدارة ورؤساء الأقسام والمدرسين والطلبة وأولياء الأمور وشؤون الطلبة.\nوالـ AI والأتمتة بيشيلوا الشغل الورقي، والإدارة بتعتمد.\n\nاحجز ديمو على darsify.net\n\n—\n\nFrom the canteen to the exams: one ecosystem for schools and universities.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
+    ig="From the canteen to the exams. Darsify for Schools & Universities.\n\nOne ecosystem that connects leadership, heads of department, teachers, students, parents and student affairs.\n\nAI and automation take the paperwork: reports, marking, reminders and records, ready for staff to approve.\n\nJoin us now at darsify.net (link in bio).\n\n#WeplanYouteach #TeachMoreChaseLess #edtech #schools #universities",
+    fb="من الكانتين لحد الامتحانات.\nDarsify for Schools & Universities: سيستم واحد بيربط الإدارة ورؤساء الأقسام والمدرسين والطلبة وأولياء الأمور وشؤون الطلبة.\nوالـ AI والأتمتة بيشيلوا الشغل الورقي، والإدارة بتعتمد.\n\nانضم لينا على darsify.net\n\n—\n\nFrom the canteen to the exams: one ecosystem for schools and universities.\n\n#WeplanYouteach #TeachMoreChaseLess #Darsify",
     tiktok="From the canteen to the exams. One ecosystem for schools and universities. #WeplanYouteach #edtech #schools #university #AI"))
 
 R['RL-09'] = dict(title='Guess the weak topic', family='orange', bpm=116, key=9, mood='drive', seed=99, cover=1.5, scenes=[
