@@ -121,7 +121,7 @@ def sc_hook(b, sc):
         st = sc['stamp']; b.add(f'<div class="stampT" data-in="{st["t"]}" data-a="stamp" data-rot="{st.get("rot",-10)}" style="left:{st.get("x",250)}px;top:{st.get("y",900)}px;border-color:{st.get("c",ORANGE)};color:{st.get("c",ORANGE)};{"font-family:A;" if b.ar else ""}">{esc(st["text"])}</div>')
         b.e(st['t'], 'stamp')
     for c in sc.get('chips', []):
-        b.add(f'<div class="chipT" data-in="{c["t"]}" data-a="pop" data-float="{c.get("f",8)}" data-ph="{c.get("ph",0)}" style="left:{c["x"]}px;top:{c["y"]}px;{"background:"+c["bg"]+";border-color:"+c["bg"]+";" if c.get("bg") else ""}{"font-family:A;" if b.ar else ""}">{esc(c["text"])}</div>')
+        b.add(f'<div class="chipT" data-in="{c["t"]}" data-a="pop" data-float="{c.get("f",8)}" data-ph="{c.get("ph",0)}" style="left:{c["x"]}px;top:{c["y"]}px;{"background:"+c["bg"]+";border-color:"+c["bg"]+";" if c.get("bg") else ""}{"font-family:A;direction:rtl;" if b.ar else ""}">{esc(c["text"])}</div>')
         b.e(c['t'], 'pop')
     mascots_default(b, sc)
 
@@ -254,7 +254,7 @@ def sc_chips(b, sc):
     merge = sc.get('merge')
     for i, c in enumerate(sc['chips']):
         out = f' data-out="{merge+i*.03}" data-outa="shrink"' if merge else ''
-        b.add(f'<div class="chipT" data-in="{c["t"]}" data-a="pop" data-float="{c.get("f",10)}" data-ph="{i*1.3}"{out} style="left:{c["x"]}px;top:{c["y"]}px;{"background:"+c["bg"]+";border-color:"+c["bg"]+";" if c.get("bg") else ""}{"font-family:A;" if b.ar else ""}">' + (icon(c['icon'], 40) + '&nbsp;&nbsp;' if c.get('icon') else '') + f'{esc(c["text"])}</div>')
+        b.add(f'<div class="chipT" data-in="{c["t"]}" data-a="pop" data-float="{c.get("f",10)}" data-ph="{i*1.3}"{out} style="left:{c["x"]}px;top:{c["y"]}px;{"background:"+c["bg"]+";border-color:"+c["bg"]+";" if c.get("bg") else ""}{"font-family:A;direction:rtl;" if b.ar else ""}">' + (icon(c['icon'], 40) + '&nbsp;&nbsp;' if c.get('icon') else '') + f'{esc(c["text"])}</div>')
         b.e(c['t'], 'pop')
     if merge:
         wm = uri(A / 'logos' / 'darsify-wordmark-navy.svg')

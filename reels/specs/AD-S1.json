@@ -1,0 +1,652 @@
+{
+ "title": "Darsify للمدارس: سيستم واحد للكل",
+ "lang": "ar",
+ "family": "blue",
+ "bpm": 112,
+ "key": 5,
+ "mood": "bright",
+ "seed": 902,
+ "cover": 13.6,
+ "scenes": [
+  {
+   "type": "story",
+   "d": 10.6,
+   "open": "class",
+   "boardtitle": "Darsify for Schools",
+   "lines": [
+    {
+     "who": "dara",
+     "t": 0.4,
+     "text": "مستر، هي المدرسة كلها هتشتغل على Darsify؟",
+     "ex": "thinking"
+    },
+    {
+     "who": "ustaz",
+     "t": 3.3,
+     "text": "الإدارة والمدرسين والطلبة وأولياء الأمور.",
+     "ex": "proud",
+     "shot": "boardwide"
+    },
+    {
+     "who": "dars",
+     "t": 6.6,
+     "text": "كلهم على سيستم واحد؟",
+     "ex": "surprised",
+     "react": {
+      "dara": "surprised"
+     }
+    },
+    {
+     "who": "ustaz",
+     "t": 8.5,
+     "text": "سيستم واحد بالـ AI.",
+     "ex": "happy"
+    }
+   ],
+   "board": [
+    {
+     "t": 3.7,
+     "write": "الإدارة",
+     "y": 120,
+     "size": 54
+    },
+    {
+     "t": 4.3,
+     "write": "المدرسين",
+     "y": 195,
+     "size": 54
+    },
+    {
+     "t": 4.9,
+     "write": "الطلبة",
+     "y": 270,
+     "size": 54
+    },
+    {
+     "t": 5.5,
+     "write": "أولياء الأمور",
+     "y": 345,
+     "size": 54,
+     "c": "#ff9a6e"
+    }
+   ],
+   "cast": {
+    "dars": {
+     "jump": [
+      6.8
+     ]
+    }
+   }
+  },
+  {
+   "type": "hook",
+   "d": 2.4,
+   "tin": "whip",
+   "family": "ink",
+   "kicker": "١ · للإدارة",
+   "head": [
+    "المدرسة كلها",
+    "*في شاشة واحدة.*"
+   ],
+   "size": 125,
+   "y": 440,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "focus"
+      ]
+     ],
+     "x": 390,
+     "y": 1150,
+     "w": 320,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "d": 6.0,
+   "tin": "dolly",
+   "family": "ink",
+   "head": [
+    "نتايج، نقاط ضعف،",
+    "*وطلبة محتاجين متابعة.*"
+   ],
+   "size": 88,
+   "y": 250,
+   "py": 520,
+   "cam": [
+    [
+     0,
+     540,
+     960,
+     0.9,
+     -14,
+     8,
+     0.01
+    ],
+    [
+     0.1,
+     540,
+     960,
+     1,
+     0,
+     0,
+     1.2
+    ],
+    [
+     3.4,
+     540,
+     1020,
+     1.08,
+     4,
+     2,
+     1.6
+    ]
+   ],
+   "panel": {
+    "crumb": "Insights  /  All groups",
+    "title": "This term",
+    "blocks": [
+     {
+      "bar": {
+       "l": "Group 9A",
+       "w": 82,
+       "v": "82%",
+       "at": 0.8
+      }
+     },
+     {
+      "bar": {
+       "l": "Group 9B",
+       "w": 74,
+       "v": "74%",
+       "at": 1.1
+      }
+     },
+     {
+      "bar": {
+       "l": "Group 9C",
+       "w": 61,
+       "v": "61%",
+       "at": 1.4,
+       "c": "#f26229"
+      }
+     },
+     {
+      "row": {
+       "l": "At-risk students",
+       "chip": "bad",
+       "ctext": "6",
+       "in": 2.0
+      }
+     },
+     {
+      "row": {
+       "l": "Weakest topic, Group 9C",
+       "m": "Fractions",
+       "chip": "info",
+       "ctext": "Practice set",
+       "in": 2.5
+      }
+     },
+     {
+      "btn": {
+       "label": "Export PDF",
+       "at": 3.6,
+       "toast": "Report ready"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "ui",
+   "d": 6.2,
+   "tin": "whip",
+   "family": "ink",
+   "head": [
+    "اسأل الـ AI",
+    "*يجهز، وإنت توافق.*"
+   ],
+   "size": 96,
+   "y": 250,
+   "py": 540,
+   "panel": {
+    "crumb": "Agent",
+    "title": "Workspace agent",
+    "sub": "Approvals ON · nothing changes without your OK",
+    "blocks": [
+     {
+      "type": {
+       "label": "YOU ASKED",
+       "text": "Which students have overdue work?",
+       "t0": 0.4,
+       "t1": 1.7
+      }
+     },
+     {
+      "row": {
+       "l": "14 students in 3 groups",
+       "chip": "info",
+       "ctext": "Found",
+       "in": 2.2
+      }
+     },
+     {
+      "row": {
+       "l": "Reminders to students and parents",
+       "chip": "pend",
+       "ctext": "Drafted",
+       "to": "paid",
+       "totext": "Approved",
+       "at": 3.8,
+       "in": 2.7
+      }
+     },
+     {
+      "btn": {
+       "label": "Approve",
+       "at": 3.8,
+       "toast": "Sent on WhatsApp"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "chips",
+   "d": 4.8,
+   "tin": "flip",
+   "family": "blue",
+   "head": [
+    "٢ · للمدرسين:",
+    "*شغل ورق أقل.*"
+   ],
+   "size": 100,
+   "y": 290,
+   "drift": 5,
+   "chips": [
+    {
+     "text": "امتحانات بالـ AI من المنهج",
+     "x": 80,
+     "y": 760,
+     "t": 0.6
+    },
+    {
+     "text": "تصحيح مقترح، والمدرس يوافق",
+     "x": 180,
+     "y": 890,
+     "t": 0.85,
+     "bg": "#f26229"
+    },
+    {
+     "text": "نسخة مختلفة لكل طالب",
+     "x": 90,
+     "y": 1020,
+     "t": 1.1
+    },
+    {
+     "text": "مواد ومحاضرات محمية",
+     "x": 330,
+     "y": 1150,
+     "t": 1.35
+    },
+    {
+     "text": "واجبات بتذكير تلقائي",
+     "x": 120,
+     "y": 1280,
+     "t": 1.6
+    }
+   ]
+  },
+  {
+   "type": "exam",
+   "d": 5.6,
+   "tin": "dolly",
+   "family": "blue",
+   "tabs": [
+    "IGCSE",
+    "American",
+    "IB",
+    "ثانوية عامة"
+   ],
+   "on": 0,
+   "ey": 640,
+   "section": "Mathematics",
+   "qn": "8 of 30",
+   "q": "A shop reduces the price of a jacket by 20%. The new price is 640 EGP. What was the original price?",
+   "choices": [
+    "768",
+    "800",
+    "820",
+    "960"
+   ],
+   "pick": 1,
+   "pick_at": 2.8,
+   "next_at": 3.6,
+   "c0": 0.2,
+   "c1": 5.4,
+   "tfrom": 2700,
+   "tto": 2695,
+   "head": [
+    "٣ · للطلبة:",
+    "*امتحان زي الحقيقي.*"
+   ],
+   "size": 92,
+   "y": 250,
+   "cam": [
+    [
+     0,
+     540,
+     1000,
+     0.8,
+     -24,
+     16,
+     0.01
+    ],
+    [
+     0.15,
+     540,
+     980,
+     1,
+     0,
+     0,
+     1.4
+    ],
+    [
+     1.9,
+     470,
+     1080,
+     1.3,
+     7,
+     4,
+     0.8
+    ],
+    [
+     3.7,
+     540,
+     960,
+     1,
+     0,
+     0,
+     0.8
+    ]
+   ]
+  },
+  {
+   "type": "list",
+   "d": 5.6,
+   "tin": "whip",
+   "family": "ink",
+   "head": [
+    "والغش",
+    "*صعب جدًا.*"
+   ],
+   "size": 120,
+   "gap": 200,
+   "items": [
+    {
+     "title": "التطبيق بيقفل الجهاز",
+     "desc": "لحد ما الطالب يخلص",
+     "icon": "exam"
+    },
+    {
+     "title": "صورة من الكاميرا كل ٣ ثواني",
+     "desc": "موبايل في الإيد؟ الامتحان يقف",
+     "icon": "person"
+    },
+    {
+     "title": "مفيش شاشة تانية",
+     "desc": "الامتحان ما يبدأش غير لما تتفصل",
+     "icon": "x"
+    },
+    {
+     "title": "اسم الطالب على كل ورقة",
+     "desc": "ولو اتسربت، تعرف مين",
+     "icon": "doc"
+    }
+   ]
+  },
+  {
+   "type": "story",
+   "d": 6.6,
+   "tin": "whip",
+   "open": "class",
+   "boardtitle": "Dars · Weak points",
+   "lines": [
+    {
+     "who": "dars",
+     "t": 0.3,
+     "text": "وأنا بعد الامتحان؟",
+     "ex": "thinking"
+    },
+    {
+     "who": "ustaz",
+     "t": 2.2,
+     "text": "غلطاتك بترجعلك تمرين لحد ما تتقنها.",
+     "ex": "proud",
+     "shot": "boardwide"
+    },
+    {
+     "who": "dars",
+     "t": 5.3,
+     "text": "اتفقنا!",
+     "ex": "celebrate",
+     "react": {
+      "dara": "happy"
+     }
+    }
+   ],
+   "board": [
+    {
+     "t": 2.6,
+     "panel": {
+      "crumb": "Practice  /  Weak points",
+      "title": "Clear these to unlock the next mock",
+      "blocks": [
+       {
+        "bar": {
+         "l": "Fractions",
+         "w": 45,
+         "v": "45%",
+         "at": 3.1,
+         "c": "#f26229"
+        }
+       },
+       {
+        "bar": {
+         "l": "Percentages",
+         "w": 58,
+         "v": "58%",
+         "at": 3.4
+        }
+       },
+       {
+        "row": {
+         "l": "Practise your mistakes",
+         "chip": "pend",
+         "ctext": "10 questions",
+         "to": "paid",
+         "totext": "Cleared",
+         "at": 4.6
+        }
+       }
+      ]
+     },
+     "x": 20,
+     "y": 75,
+     "scale": 0.66
+    }
+   ],
+   "cast": {
+    "dars": {
+     "jump": [
+      5.5
+     ]
+    }
+   }
+  },
+  {
+   "type": "hook",
+   "d": 2.4,
+   "tin": "whip",
+   "family": "ink",
+   "kicker": "٤ · لأولياء الأمور",
+   "head": [
+    "كل أسبوع",
+    "*على واتساب.*"
+   ],
+   "size": 140,
+   "y": 440,
+   "mascots": [
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 400,
+     "y": 1160,
+     "w": 300,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "d": 5.4,
+   "family": "ink",
+   "name": "تقرير مريم الأسبوعي",
+   "av": "D",
+   "status": "واتساب",
+   "unread": true,
+   "py": 330,
+   "ph": 900,
+   "msgs": [
+    {
+     "text": "الحضور: ٥ من ٥ أيام",
+     "t": 0.3,
+     "time": "الجمعة ٩:٠٠ م"
+    },
+    {
+     "text": "اختبار الرياضيات: ٩٠٪",
+     "t": 0.9,
+     "time": "الجمعة ٩:٠٠ م"
+    },
+    {
+     "text": "محتاجة تركيز في: الكسور، والتمرين اتبعتلها",
+     "t": 1.5,
+     "time": "الجمعة ٩:٠٠ م"
+    },
+    {
+     "text": "تنبيه: مريم غابت حصة العلوم النهارده",
+     "t": 3.0,
+     "time": "الثلاثاء ٨:٤٠ ص"
+    }
+   ],
+   "mascots": [
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "focus"
+      ],
+      [
+       3.2,
+       "proud"
+      ]
+     ],
+     "x": 720,
+     "y": 1330,
+     "w": 250,
+     "t": 0.2
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.6,
+   "tin": "whip",
+   "en": true,
+   "head": [
+    "Teach more.",
+    "*Chase less.*"
+   ],
+   "size": 160,
+   "y": 480,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "الإدارة",
+    "المدرسين",
+    "الطلبة",
+    "أولياء الأمور",
+    "الـ AI",
+    "الأمان"
+   ],
+   "btn": "انضم لينا"
+  }
+ ],
+ "caption": {
+  "ar": "مدرسة؟ جامعة؟ سنتر؟ Darsify بيربط الكل على سيستم واحد بالـ AI:\n\nالإدارة: نتايج كل مجموعة، نقاط الضعف، والطلبة اللي محتاجين متابعة. واسأل الـ AI، هو يجهز وإنت توافق.\n\nالمدرسين: امتحانات بالـ AI، تصحيح مقترح والمدرس يوافق، ومحتوى محمي.\n\nالطلبة: امتحانات زي الحقيقي بمراقبة، وغلطاتهم بترجعلهم تمرين.\n\nأولياء الأمور: تقرير أسبوعي على واتساب، وتنبيه لو الطالب غاب.\n\nTeach more. Chase less. انضم لينا على darsify.net\n\n#WeplanYouteach #TeachMoreChaseLess",
+  "headline": "انضم لينا على darsify.net"
+ },
+ "id": "AD-S1"
+}

@@ -1,0 +1,823 @@
+{
+ "title": "Darsify للمدرسين: من كل الزوايا",
+ "lang": "ar",
+ "family": "orange",
+ "bpm": 116,
+ "key": 2,
+ "mood": "warm",
+ "seed": 901,
+ "cover": 15.0,
+ "scenes": [
+  {
+   "type": "story",
+   "d": 10.4,
+   "open": "class",
+   "boardtitle": "Darsify",
+   "lines": [
+    {
+     "who": "dars",
+     "t": 0.4,
+     "text": "مستر، إنت إزاي بتلحق كل ده؟",
+     "ex": "thinking"
+    },
+    {
+     "who": "ustaz",
+     "t": 2.9,
+     "text": "Darsify بيعمل نص الشغل عني.",
+     "ex": "proud",
+     "react": {
+      "dars": "surprised"
+     }
+    },
+    {
+     "who": "dara",
+     "t": 5.4,
+     "text": "طب وإحنا؟ وأهالينا؟",
+     "ex": "surprised"
+    },
+    {
+     "who": "ustaz",
+     "t": 7.5,
+     "text": "كلكم معانا. تعالوا أوريكم.",
+     "ex": "happy",
+     "shot": "boardwide"
+    }
+   ],
+   "board": [
+    {
+     "t": 7.9,
+     "write": "المدرس · الطالب · ولي الأمر",
+     "y": 150,
+     "size": 42,
+     "c": "#ff9a6e"
+    }
+   ],
+   "cast": {
+    "dara": {
+     "jump": [
+      5.6
+     ]
+    }
+   }
+  },
+  {
+   "type": "hook",
+   "d": 2.4,
+   "tin": "whip",
+   "family": "blue",
+   "kicker": "١ · من ناحية المدرس",
+   "head": [
+    "حصتك",
+    "*بتمشي لوحدها.*"
+   ],
+   "size": 140,
+   "y": 440,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 390,
+     "y": 1150,
+     "w": 320,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "ui",
+   "d": 6.2,
+   "tin": "dolly",
+   "family": "blue",
+   "head": [
+    "حدد الميعاد",
+    "*والباقي علينا.*"
+   ],
+   "size": 96,
+   "y": 250,
+   "py": 500,
+   "cam": [
+    [
+     0,
+     540,
+     960,
+     0.9,
+     -14,
+     8,
+     0.01
+    ],
+    [
+     0.1,
+     540,
+     960,
+     1,
+     0,
+     0,
+     1.2
+    ],
+    [
+     3.4,
+     540,
+     1020,
+     1.08,
+     4,
+     2,
+     1.6
+    ]
+   ],
+   "panel": {
+    "crumb": "Sessions  /  Sunday 7:00 PM",
+    "title": "SAT · Group A",
+    "sub": "Students pay by card, wallet, InstaPay or Fawry",
+    "blocks": [
+     {
+      "row": {
+       "l": "Omar K.",
+       "m": "InstaPay",
+       "chip": "pend",
+       "ctext": "Pending",
+       "to": "paid",
+       "totext": "Paid",
+       "at": 1.0
+      }
+     },
+     {
+      "row": {
+       "l": "Mariam S.",
+       "m": "Wallet",
+       "chip": "pend",
+       "ctext": "Pending",
+       "to": "paid",
+       "totext": "Paid",
+       "at": 1.4
+      }
+     },
+     {
+      "row": {
+       "l": "Youssef A.",
+       "m": "Card",
+       "chip": "pend",
+       "ctext": "Pending",
+       "to": "paid",
+       "totext": "Paid",
+       "at": 1.8
+      }
+     },
+     {
+      "btn": {
+       "label": "Send link to paid students",
+       "at": 2.8,
+       "toast": "Link sent to paid students only"
+      }
+     },
+     {
+      "note": "After class: <b style=\"color:#fff\">recording, AI summary and attendance</b>, automatically"
+     }
+    ]
+   }
+  },
+  {
+   "type": "chips",
+   "d": 4.6,
+   "tin": "whip",
+   "family": "blue",
+   "head": [
+    "امتحانات بالـ AI",
+    "*وإنت اللي بتوافق.*"
+   ],
+   "size": 100,
+   "y": 290,
+   "drift": 5,
+   "chips": [
+    {
+     "text": "أسئلة بأسلوبك إنت",
+     "x": 90,
+     "y": 760,
+     "t": 0.6
+    },
+    {
+     "text": "من فيديوهاتك وكتبك",
+     "x": 400,
+     "y": 890,
+     "t": 0.85
+    },
+    {
+     "text": "تصحيح مقترح بالـ AI",
+     "x": 110,
+     "y": 1020,
+     "t": 1.1
+    },
+    {
+     "text": "ولا درجة من غير موافقتك",
+     "x": 300,
+     "y": 1150,
+     "t": 1.35,
+     "bg": "#f26229"
+    },
+    {
+     "text": "نسخة مختلفة لكل طالب",
+     "x": 130,
+     "y": 1280,
+     "t": 1.6
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "d": 5.8,
+   "tin": "flip",
+   "family": "ink",
+   "head": [
+    "محتواك",
+    "*صعب يتسرب.*"
+   ],
+   "size": 120,
+   "gap": 200,
+   "items": [
+    {
+     "title": "فيديو محمي",
+     "desc": "من غير تحميل، والتسجيل بيطلع شاشة سودا",
+     "icon": "doc"
+    },
+    {
+     "title": "اسم الطالب على كل فيديو وملف",
+     "desc": "ولو اتسرب، تعرف مين",
+     "icon": "person"
+    },
+    {
+     "title": "حد أقصى للأجهزة",
+     "desc": "الحساب ما يتقسمش على كذا حد",
+     "icon": "users"
+    },
+    {
+     "title": "تتبع الورقة المتسربة",
+     "desc": "من صورة أو نص منسوخ",
+     "icon": "exam"
+    }
+   ]
+  },
+  {
+   "type": "tiles",
+   "d": 5.4,
+   "tin": "dolly",
+   "family": "ink",
+   "head": [
+    "وفريقك",
+    "*معاك جوه.*"
+   ],
+   "size": 110,
+   "gap": 235,
+   "tiles": [
+    {
+     "title": "مساعدين بصلاحيات",
+     "desc": "كل واحد يشوف اللي إنت تسمح بيه",
+     "icon": "users",
+     "c": "#2655a3"
+    },
+    {
+     "title": "واتساب جوه البوابة",
+     "desc": "ترد على الطلبة والأهالي من مكان واحد",
+     "icon": "chat",
+     "c": "#f26229"
+    },
+    {
+     "title": "متجر لكتبك ومذكراتك",
+     "desc": "تبيع المحتوى بتاعك جوه المنصة",
+     "icon": "cart",
+     "c": "#2655a3"
+    },
+    {
+     "title": "Agent بالـ AI",
+     "desc": "تطلب منه وهو يجهز، وإنت توافق",
+     "icon": "ai",
+     "c": "#f26229"
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.2,
+   "tin": "whip",
+   "family": "orange",
+   "kicker": "٢ · من ناحية الطالب",
+   "head": [
+    "مذاكرة",
+    "*بخطة واضحة.*"
+   ],
+   "size": 140,
+   "y": 440,
+   "mascots": [
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 400,
+     "y": 1160,
+     "w": 300,
+     "t": 0.3,
+     "jump": [
+      0.8
+     ]
+    }
+   ]
+  },
+  {
+   "type": "story",
+   "d": 7.2,
+   "tin": "dolly",
+   "open": "class",
+   "boardtitle": "Dara · Today's plan",
+   "lines": [
+    {
+     "who": "dara",
+     "t": 0.3,
+     "text": "وأنا كطالبة؟ إيه اللي يفرق معايا؟",
+     "ex": "thinking"
+    },
+    {
+     "who": "ustaz",
+     "t": 2.7,
+     "text": "خطة كل يوم، وغلطاتك بترجعلك تمرين.",
+     "ex": "proud",
+     "shot": "boardwide"
+    },
+    {
+     "who": "dara",
+     "t": 5.9,
+     "text": "كده أحسن بكتير!",
+     "ex": "celebrate",
+     "react": {
+      "dars": "happy"
+     }
+    }
+   ],
+   "board": [
+    {
+     "t": 3.1,
+     "panel": {
+      "crumb": "Student portal  /  Today",
+      "title": "Today's plan",
+      "blocks": [
+       {
+        "row": {
+         "l": "Mock 4 · SAT Math",
+         "tick": 3.7
+        }
+       },
+       {
+        "row": {
+         "l": "Practise: Linear equations",
+         "tick": 4.3
+        }
+       },
+       {
+        "row": {
+         "l": "Review 6 mistakes",
+         "chip": "pend",
+         "ctext": "Due"
+        }
+       },
+       {
+        "bar": {
+         "l": "Score trend",
+         "w": 78,
+         "v": "+12%",
+         "at": 4.8,
+         "c": "#f26229"
+        }
+       }
+      ]
+     },
+     "x": 20,
+     "y": 75,
+     "scale": 0.66
+    }
+   ],
+   "cast": {
+    "dara": {
+     "jump": [
+      6.1
+     ]
+    }
+   }
+  },
+  {
+   "type": "ui",
+   "d": 5.6,
+   "tin": "dolly",
+   "family": "orange",
+   "head": [
+    "الـ AI بيشرحله",
+    "*غلط فين بالظبط.*"
+   ],
+   "size": 96,
+   "y": 250,
+   "py": 520,
+   "cam": [
+    [
+     0,
+     540,
+     960,
+     0.9,
+     -14,
+     8,
+     0.01
+    ],
+    [
+     0.1,
+     540,
+     960,
+     1,
+     0,
+     0,
+     1.2
+    ],
+    [
+     3.4,
+     540,
+     1020,
+     1.08,
+     4,
+     2,
+     1.6
+    ]
+   ],
+   "panel": {
+    "crumb": "Results  /  Mock 4  /  Question 7",
+    "title": "Why was this wrong?",
+    "sub": "3x − 7 = 2x + 5",
+    "blocks": [
+     {
+      "row": {
+       "l": "Your answer: x = −2",
+       "chip": "bad",
+       "ctext": "Wrong"
+      }
+     },
+     {
+      "note": "<b style=\"color:#fff\">AI:</b> you moved the 7 to the wrong side. Move the numbers first, then x."
+     },
+     {
+      "bar": {
+       "l": "Linear equations",
+       "w": 41,
+       "v": "41%",
+       "at": 1.6,
+       "c": "#f26229"
+      }
+     },
+     {
+      "btn": {
+       "label": "Practise this",
+       "at": 3.0,
+       "toast": "Added to today's plan"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "exam",
+   "d": 5.8,
+   "tin": "dolly",
+   "family": "blue",
+   "tabs": [
+    "SAT",
+    "EST",
+    "ACT",
+    "IGCSE",
+    "ثانوية عامة"
+   ],
+   "on": 0,
+   "ey": 640,
+   "section": "Math",
+   "qn": "12 of 22",
+   "q": "The function f is defined by f(x) = 3x² − 12x + 7. For what value of x does f reach its minimum?",
+   "choices": [
+    "−2",
+    "0",
+    "2",
+    "4"
+   ],
+   "pick": 2,
+   "pick_at": 2.8,
+   "next_at": 3.6,
+   "c0": 0.2,
+   "c1": 5.6,
+   "tfrom": 1908,
+   "tto": 1903,
+   "head": [
+    "امتحان تجريبي",
+    "*زي الحقيقي بالظبط.*"
+   ],
+   "size": 92,
+   "y": 250,
+   "cam": [
+    [
+     0,
+     540,
+     1000,
+     0.8,
+     -24,
+     16,
+     0.01
+    ],
+    [
+     0.15,
+     540,
+     980,
+     1,
+     0,
+     0,
+     1.4
+    ],
+    [
+     1.9,
+     470,
+     1080,
+     1.3,
+     7,
+     4,
+     0.8
+    ],
+    [
+     3.7,
+     540,
+     960,
+     1,
+     0,
+     0,
+     0.8
+    ]
+   ]
+  },
+  {
+   "type": "chips",
+   "d": 4.0,
+   "tin": "whip",
+   "family": "blue",
+   "head": [
+    "ومن غير غش."
+   ],
+   "size": 120,
+   "y": 330,
+   "drift": 5,
+   "chips": [
+    {
+     "text": "التطبيق بيقفل الجهاز",
+     "x": 90,
+     "y": 640,
+     "t": 0.5
+    },
+    {
+     "text": "الكاميرا بتراقب",
+     "x": 470,
+     "y": 770,
+     "t": 0.75
+    },
+    {
+     "text": "مفيش شاشة تانية",
+     "x": 110,
+     "y": 900,
+     "t": 1.0
+    },
+    {
+     "text": "موبايل في الإيد؟ الامتحان يقف",
+     "x": 150,
+     "y": 1030,
+     "t": 1.25,
+     "bg": "#f26229"
+    }
+   ],
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "focus"
+      ]
+     ],
+     "x": 400,
+     "y": 1240,
+     "w": 290,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "hook",
+   "d": 2.4,
+   "tin": "whip",
+   "family": "ink",
+   "kicker": "٣ · ولي الأمر",
+   "head": [
+    "بيعرف كل حاجة",
+    "*من غير ما يسأل.*"
+   ],
+   "size": 120,
+   "y": 440,
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 390,
+     "y": 1150,
+     "w": 320,
+     "t": 0.3
+    }
+   ]
+  },
+  {
+   "type": "chat",
+   "d": 5.8,
+   "family": "ink",
+   "name": "تقرير عمر الأسبوعي",
+   "av": "D",
+   "status": "واتساب",
+   "unread": true,
+   "py": 330,
+   "ph": 920,
+   "msgs": [
+    {
+     "text": "الحضور: ٤ من ٤ حصص",
+     "t": 0.3,
+     "time": "الجمعة ٩:٠٠ م"
+    },
+    {
+     "text": "امتحان ٣: ٨٢٪",
+     "t": 0.9,
+     "time": "الجمعة ٩:٠٠ م"
+    },
+    {
+     "text": "نقطة ضعف: النسب، والتمرين اتبعتله",
+     "t": 1.5,
+     "time": "الجمعة ٩:٠٠ م"
+    },
+    {
+     "text": "مطلوب الأسبوع الجاي: ٣ واجبات",
+     "t": 2.1,
+     "time": "الجمعة ٩:٠٠ م"
+    },
+    {
+     "text": "تنبيه: عمر غاب حصة النهارده",
+     "t": 3.4,
+     "time": "الأحد ٧:١٥ م"
+    }
+   ],
+   "mascots": [
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "focus"
+      ],
+      [
+       3.6,
+       "proud"
+      ]
+     ],
+     "x": 720,
+     "y": 1330,
+     "w": 250,
+     "t": 0.2
+    }
+   ]
+  },
+  {
+   "type": "story",
+   "d": 6.4,
+   "tin": "whip",
+   "open": "class",
+   "boardtitle": "Darsify",
+   "lines": [
+    {
+     "who": "dars",
+     "t": 0.3,
+     "text": "يعني كله في مكان واحد؟",
+     "ex": "surprised"
+    },
+    {
+     "who": "ustaz",
+     "t": 2.3,
+     "text": "وأنا بركز في الشرح بس.",
+     "ex": "proud"
+    },
+    {
+     "who": "dara",
+     "t": 4.3,
+     "text": "وإحنا بنذاكر أحسن.",
+     "ex": "celebrate",
+     "react": {
+      "dars": "celebrate"
+     }
+    }
+   ],
+   "cast": {
+    "dars": {
+     "jump": [
+      4.6
+     ]
+    },
+    "dara": {
+     "jump": [
+      4.5
+     ]
+    }
+   }
+  },
+  {
+   "type": "hook",
+   "d": 2.6,
+   "tin": "whip",
+   "en": true,
+   "head": [
+    "Teach more.",
+    "*Chase less.*"
+   ],
+   "size": 160,
+   "y": 480,
+   "mascots": [
+    {
+     "who": "dars",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 130,
+     "y": 1180,
+     "w": 270,
+     "t": 0.2,
+     "jump": [
+      0.8
+     ]
+    },
+    {
+     "who": "ustaz",
+     "ex": [
+      [
+       0,
+       "proud"
+      ]
+     ],
+     "x": 400,
+     "y": 1150,
+     "w": 300,
+     "t": 0.30000000000000004
+    },
+    {
+     "who": "dara",
+     "ex": [
+      [
+       0,
+       "happy"
+      ]
+     ],
+     "x": 690,
+     "y": 1180,
+     "w": 270,
+     "t": 0.4,
+     "ph": 2,
+     "jump": [
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "type": "end",
+   "d": 4.4,
+   "words": [
+    "الحصص",
+    "الدفع",
+    "الامتحانات",
+    "الـ AI",
+    "الحماية",
+    "التقارير"
+   ],
+   "btn": "ابدأ مجانًا",
+   "join": "ابدأ مجانًا على <b>darsify.net</b>"
+  }
+ ],
+ "caption": {
+  "ar": "مدرس؟ شوف Darsify من ٣ زوايا:\n\nإنت: تحدد ميعاد الحصة، الطلبة يدفعوا بالكارت أو المحفظة أو إنستاباي أو فوري، واللينك يوصل للي دفع بس. امتحانات بالـ AI بأسلوبك، والـ AI يقترح الدرجة وإنت توافق. ومحتواك صعب يتسرب، ولو اتسرب تعرف مين.\n\nطالبك: خطة كل يوم، وغلطاته بترجعله تمرين لحد ما يتقنها، وامتحانات تجريبية زي الحقيقي.\n\nولي الأمر: تقرير أسبوعي على واتساب، وتنبيه لو ابنه غاب.\n\nTeach more. Chase less. ابدأ مجانًا على darsify.net\n\n#WeplanYouteach #TeachMoreChaseLess",
+  "headline": "ابدأ مجانًا على darsify.net"
+ },
+ "id": "AD-T1"
+}
